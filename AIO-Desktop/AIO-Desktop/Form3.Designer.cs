@@ -58,7 +58,7 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.checkBox1);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "EMRE";
             this.ResumeLayout(false);
             this.PerformLayout();
 
