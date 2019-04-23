@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AIO
+namespace AIO_Staff
 {
     public partial class ProfileUpdate : Form
     {
@@ -17,7 +17,7 @@ namespace AIO
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -31,14 +31,20 @@
             this.middlelogo1 = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.Label();
             this.nickLabel = new System.Windows.Forms.Label();
-            this.nickTextBox = new System.Windows.Forms.Label();
             this.mailLabel = new System.Windows.Forms.Label();
-            this.mailTextBox = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.passwoedTextBox = new System.Windows.Forms.Label();
             this.signUpBtn = new System.Windows.Forms.Label();
             this.signInBtn = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nickTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.mailTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // middlelogo1
@@ -71,14 +77,6 @@
             this.nickLabel.TabIndex = 2;
             this.nickLabel.Text = "Nick";
             // 
-            // nickTextBox
-            // 
-            this.nickTextBox.Image = global::AIO.Properties.Resources.textbox1;
-            this.nickTextBox.Location = new System.Drawing.Point(399, 100);
-            this.nickTextBox.Name = "nickTextBox";
-            this.nickTextBox.Size = new System.Drawing.Size(264, 42);
-            this.nickTextBox.TabIndex = 3;
-            // 
             // mailLabel
             // 
             this.mailLabel.AutoSize = true;
@@ -91,14 +89,6 @@
             this.mailLabel.TabIndex = 4;
             this.mailLabel.Text = "Mail";
             // 
-            // mailTextBox
-            // 
-            this.mailTextBox.Image = global::AIO.Properties.Resources.textbox2;
-            this.mailTextBox.Location = new System.Drawing.Point(399, 194);
-            this.mailTextBox.Name = "mailTextBox";
-            this.mailTextBox.Size = new System.Drawing.Size(264, 42);
-            this.mailTextBox.TabIndex = 5;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -110,14 +100,6 @@
             this.label1.Size = new System.Drawing.Size(103, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Password";
-            // 
-            // passwoedTextBox
-            // 
-            this.passwoedTextBox.Image = global::AIO.Properties.Resources.textbox3;
-            this.passwoedTextBox.Location = new System.Drawing.Point(402, 291);
-            this.passwoedTextBox.Name = "passwoedTextBox";
-            this.passwoedTextBox.Size = new System.Drawing.Size(261, 41);
-            this.passwoedTextBox.TabIndex = 7;
             // 
             // signUpBtn
             // 
@@ -145,19 +127,76 @@
             this.signInBtn.Text = "Sign In";
             this.signInBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AIO.Properties.Resources.textbox4;
+            this.pictureBox1.Location = new System.Drawing.Point(402, 88);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 41);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // nickTextBox
+            // 
+            this.nickTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nickTextBox.Location = new System.Drawing.Point(415, 97);
+            this.nickTextBox.Multiline = true;
+            this.nickTextBox.Name = "nickTextBox";
+            this.nickTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nickTextBox.TabIndex = 11;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AIO.Properties.Resources.textbox5;
+            this.pictureBox2.Location = new System.Drawing.Point(402, 187);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(264, 43);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // mailTextBox
+            // 
+            this.mailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.mailTextBox.Location = new System.Drawing.Point(415, 199);
+            this.mailTextBox.Multiline = true;
+            this.mailTextBox.Name = "mailTextBox";
+            this.mailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mailTextBox.TabIndex = 13;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::AIO.Properties.Resources.textbox6;
+            this.pictureBox3.Location = new System.Drawing.Point(402, 279);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(264, 42);
+            this.pictureBox3.TabIndex = 14;
+            this.pictureBox3.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(415, 288);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 15;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AIO.Properties.Resources.bg4;
             this.ClientSize = new System.Drawing.Size(706, 506);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.mailTextBox);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.nickTextBox);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.signInBtn);
             this.Controls.Add(this.signUpBtn);
-            this.Controls.Add(this.passwoedTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.mailTextBox);
             this.Controls.Add(this.mailLabel);
-            this.Controls.Add(this.nickTextBox);
             this.Controls.Add(this.nickLabel);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.middlelogo1);
@@ -165,6 +204,9 @@
             this.Name = "SignUp";
             this.Text = "SignUp";
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,12 +217,15 @@
         private System.Windows.Forms.PictureBox middlelogo1;
         private System.Windows.Forms.Label closeBtn;
         private System.Windows.Forms.Label nickLabel;
-        private System.Windows.Forms.Label nickTextBox;
         private System.Windows.Forms.Label mailLabel;
-        private System.Windows.Forms.Label mailTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label passwoedTextBox;
         private System.Windows.Forms.Label signUpBtn;
         private System.Windows.Forms.Label signInBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox nickTextBox;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox mailTextBox;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

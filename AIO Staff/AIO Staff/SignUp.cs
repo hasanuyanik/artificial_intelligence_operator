@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AIO
+namespace AIO_Staff
 {
-    public partial class ProfileUpdate : Form
+    public partial class SignUp : Form
     {
-        public ProfileUpdate()
+        public SignUp()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
