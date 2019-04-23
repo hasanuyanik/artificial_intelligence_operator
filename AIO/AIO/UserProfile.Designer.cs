@@ -46,7 +46,7 @@
             // moneyLabel
             // 
             moneyLabel.BackColor = System.Drawing.Color.Transparent;
-            moneyLabel.Font = new System.Drawing.Font("Arial", 65.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            moneyLabel.Font = new System.Drawing.Font("Arial", 70F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             moneyLabel.ForeColor = System.Drawing.SystemColors.Control;
             moneyLabel.Image = ((System.Drawing.Image)(resources.GetObject("moneyLabel.Image")));
             moneyLabel.Location = new System.Drawing.Point(269, 195);
