@@ -31,12 +31,14 @@
             this.middlelogo = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.passwordTextBox = new System.Windows.Forms.Label();
             this.saveBtn = new System.Windows.Forms.Label();
             this.aioChatBtn = new System.Windows.Forms.Label();
             this.profileBtn = new System.Windows.Forms.Label();
             this.paymentListBtn = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.passwordTextbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // middlelogo
@@ -68,14 +70,6 @@
             this.passwordLabel.Size = new System.Drawing.Size(111, 23);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password";
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.Image = global::AIO.Properties.Resources.textbox;
-            this.passwordTextBox.Location = new System.Drawing.Point(392, 216);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(258, 42);
-            this.passwordTextBox.TabIndex = 3;
             // 
             // saveBtn
             // 
@@ -129,17 +123,37 @@
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AIO.Properties.Resources.textbox7;
+            this.pictureBox1.Location = new System.Drawing.Point(395, 205);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(264, 41);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // passwordTextbox
+            // 
+            this.passwordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextbox.Location = new System.Drawing.Point(402, 214);
+            this.passwordTextbox.Multiline = true;
+            this.passwordTextbox.Name = "passwordTextbox";
+            this.passwordTextbox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextbox.TabIndex = 9;
+            this.passwordTextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // ProfileUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AIO.Properties.Resources.bg3;
             this.ClientSize = new System.Drawing.Size(706, 506);
+            this.Controls.Add(this.passwordTextbox);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.paymentListBtn);
             this.Controls.Add(this.profileBtn);
             this.Controls.Add(this.aioChatBtn);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.middlelogo);
@@ -147,7 +161,9 @@
             this.Name = "ProfileUpdate";
             this.Text = "ProfileUpdate";
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -156,10 +172,11 @@
         private System.Windows.Forms.PictureBox middlelogo;
         private System.Windows.Forms.Label closeBtn;
         private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Label passwordTextBox;
         private System.Windows.Forms.Label saveBtn;
         private System.Windows.Forms.Label aioChatBtn;
         private System.Windows.Forms.Label profileBtn;
         private System.Windows.Forms.Label paymentListBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox passwordTextbox;
     }
 }
