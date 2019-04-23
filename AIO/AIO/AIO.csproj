@@ -58,6 +58,12 @@
     <Compile Include="Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfileUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileUpdate.Designer.cs">
+      <DependentUpon>ProfileUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Index.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="paymentPage.resx">
       <DependentUpon>PaymentPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileUpdate.resx">
+      <DependentUpon>ProfileUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +130,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\middleLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\middleLogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeBtn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\middleBtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn21.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
