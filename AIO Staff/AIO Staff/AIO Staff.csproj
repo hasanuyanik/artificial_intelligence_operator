@@ -72,25 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-=======
-    
-    <Compile Include="UserProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserProfile.Designer.cs">
-      <DependentUpon>UserProfile.cs</DependentUpon>
-    </Compile>
->>>>>>> ed9b55b67eb578eba13826a47806878b8b167391
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
-<<<<<<< HEAD
-=======
-
->>>>>>> ed9b55b67eb578eba13826a47806878b8b167391
     </Compile>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
@@ -114,18 +100,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
-=======
-
-    <EmbeddedResource Include="UserProfile.resx">
-      <DependentUpon>UserProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SignUp.resx">
-      <DependentUpon>SignUp.cs</DependentUpon>
-
->>>>>>> ed9b55b67eb578eba13826a47806878b8b167391
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
