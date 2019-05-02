@@ -97,5 +97,10 @@ namespace AIO
         {
             Application.Run(new UserProfile());
         }
+
+        private void nickTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
