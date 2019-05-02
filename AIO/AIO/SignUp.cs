@@ -46,7 +46,7 @@ namespace AIO
             }
             else if (HesapBilgi == "1")
             {
-                MessageBox.Show("Sign Up Successful");
+                MessageBox.Show("Sign Up Successfull!");
             }
         }
 

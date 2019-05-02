@@ -125,6 +125,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::AIO.Properties.Resources.textbox7;
             this.pictureBox1.Location = new System.Drawing.Point(395, 205);
             this.pictureBox1.Name = "pictureBox1";
