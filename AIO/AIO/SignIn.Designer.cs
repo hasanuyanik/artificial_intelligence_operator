@@ -95,6 +95,7 @@
             this.passwordTextBox.PasswordChar = '●';
             this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
             this.passwordTextBox.TabIndex = 18;
+            this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
             // 
             // nickTextBox
             // 

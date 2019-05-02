@@ -132,6 +132,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::AIO.Properties.Resources.textbox4;
             this.pictureBox1.Location = new System.Drawing.Point(402, 88);
             this.pictureBox1.Name = "pictureBox1";
@@ -169,6 +170,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::AIO.Properties.Resources.textbox6;
             this.pictureBox3.Location = new System.Drawing.Point(402, 279);
             this.pictureBox3.Name = "pictureBox3";
