@@ -105,6 +105,7 @@
             this.nickTextBox.Name = "nickTextBox";
             this.nickTextBox.Size = new System.Drawing.Size(251, 30);
             this.nickTextBox.TabIndex = 17;
+            this.nickTextBox.TextChanged += new System.EventHandler(this.nickTextBox_TextChanged);
             // 
             // passwordPictureBox
             // 

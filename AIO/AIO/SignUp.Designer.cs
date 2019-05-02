@@ -128,6 +128,7 @@
             this.signInBtn.TabIndex = 9;
             this.signInBtn.Text = "Sign In";
             this.signInBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
             // 
             // pictureBox1
             // 

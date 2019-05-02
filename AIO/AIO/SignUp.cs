@@ -29,9 +29,35 @@ namespace AIO
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            WebServis1.accountPortTypeClient YeniWebServis = new WebServis1.accountPortTypeClient(); 
+            var authorityApp = new AppAuthority();
+            string authority = authorityApp.Authority;
+            string nick = nickTextBox.Text;
+            string mail = mailTextBox.Text;
+            string password = passwordTextBox.Text;
+                                
 
-            string HesapBilgi = YeniWebServis.createAccount(nickTextBox.Text,mailTextBox.Text,pas)
+
+            WebServis1.accountPortTypeClient YeniWebServis = new WebServis1.accountPortTypeClient();
+
+            string HesapBilgi = YeniWebServis.createAccount(nick, mail, password, authority);
+            if (HesapBilgi == "0")
+            {
+                MessageBox.Show("Sign Up Failed!");
+            }
+            else if (HesapBilgi == "1")
+            {
+                MessageBox.Show("Sign Up Successful");
+            }
+        }
+
+        private void signInBtn_Click(object sender, EventArgs e)
+        {
+            SignIn form1 = new SignIn();
+            form1.Close();
+            Index f2 = new Index();
+            f2.Show();
+
+            this.Hide();
         }
     }
 }
