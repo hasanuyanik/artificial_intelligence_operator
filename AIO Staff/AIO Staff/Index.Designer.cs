@@ -43,6 +43,7 @@
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 0;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // signInBtn
             // 
@@ -56,6 +57,7 @@
             this.signInBtn.TabIndex = 1;
             this.signInBtn.Text = "Sign In";
             this.signInBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
             // 
             // label1
             // 
@@ -69,6 +71,7 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Sign Up";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // logo
             // 
