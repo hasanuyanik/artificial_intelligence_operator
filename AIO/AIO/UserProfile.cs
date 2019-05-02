@@ -16,5 +16,42 @@ namespace AIO
         {
             InitializeComponent();
         }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        private void AioChatBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void PaymentListBtn_Click(object sender, EventArgs e)
+        {
+            Form payment = new PaymentList();
+            payment.Show();
+            this.Close();
+
+
+        }
+
+        private void ProfileUpdateBtn_Click(object sender, EventArgs e)
+        {
+            Form update = new ProfileUpdate();
+            update.Show();
+            this.Close();
+        }
+
+        private void RemoveAccountBtn_Click(object sender, EventArgs e)
+        {
+            userprofile1.accountPortTypeClient servisaccount = new userprofile1.accountPortTypeClient();
+
+            
+
+
+
+        }
     }
 }

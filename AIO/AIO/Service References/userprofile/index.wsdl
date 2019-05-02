@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:account" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:account" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:account">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="account">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:string" />
+          <xsd:element name="nick" type="xsd:string" />
+          <xsd:element name="mail" type="xsd:string" />
+          <xsd:element name="money" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="accountList">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="account" type="tns:account" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="createAccountRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="mail" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="createAccountResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountRequest">
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updateAccountResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteAccountRequest">
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="deleteAccountResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="loginAccountRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="loginAccountResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="logoutAccountRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="logoutAccountResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllAccountsRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllAccountsResponse">
+    <wsdl:part name="return" type="tns:accountList" />
+  </wsdl:message>
+  <wsdl:message name="forgotPasswordToMailSendRequest">
+    <wsdl:part name="mail" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="forgotPasswordToMailSendResponse">
+    <wsdl:part name="return" type="tns:accountList" />
+  </wsdl:message>
+  <wsdl:portType name="accountPortType">
+    <wsdl:operation name="createAccount">
+      <documentation>Yeni hesap oluÅturma iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:createAccountRequest" />
+      <wsdl:output message="tns:createAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAccount">
+      <documentation>Hesap gÃ¼ncelleme iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:updateAccountRequest" />
+      <wsdl:output message="tns:updateAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAccount">
+      <documentation>Hesap silme iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:deleteAccountRequest" />
+      <wsdl:output message="tns:deleteAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="loginAccount">
+      <documentation>Hesap giriÅ iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:loginAccountRequest" />
+      <wsdl:output message="tns:loginAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="logoutAccount">
+      <documentation>Hesap Ã§Ä±kÄ±Å iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:logoutAccountRequest" />
+      <wsdl:output message="tns:logoutAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllAccounts">
+      <documentation>Tum hesaplari dondurur</documentation>
+      <wsdl:input message="tns:getAllAccountsRequest" />
+      <wsdl:output message="tns:getAllAccountsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="forgotPasswordToMailSend">
+      <documentation>Åifremi Unuttum maili gÃ¶nderir</documentation>
+      <wsdl:input message="tns:forgotPasswordToMailSendRequest" />
+      <wsdl:output message="tns:forgotPasswordToMailSendResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="accountBinding" type="tns:accountPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="createAccount">
+      <soap:operation soapAction="urn:account#createAccount" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAccount">
+      <soap:operation soapAction="urn:account#updateaccount" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAccount">
+      <soap:operation soapAction="urn:account#deleteAccount" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginAccount">
+      <soap:operation soapAction="urn:account#loginAccount" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logoutAccount">
+      <soap:operation soapAction="urn:account#logoutAccount" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllAccounts">
+      <soap:operation soapAction="urn:account#getAllAccounts" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forgotPasswordToMailSend">
+      <soap:operation soapAction="urn:account#forgotPasswordToMailSend" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="account">
+    <wsdl:port name="accountPort" binding="tns:accountBinding">
+      <soap:address location="http://aio.gencutopia.com/ws/rpc/account/account.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
