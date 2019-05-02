@@ -1,0 +1,3 @@
+AIO.accountService.accountPortTypeClient accountSoap = new AIO.accountService.accountPortTypeClient();
+
+accountSoap.createAccount(nick,password,mail);
