@@ -35,7 +35,7 @@ namespace AIO
 
         private void openingSignIn()
         {
-            //Application.Run(new SignIn());
+            Application.Run(new SignIn());
         }
 
         private void signUpBtn_Click(object sender, EventArgs e)
