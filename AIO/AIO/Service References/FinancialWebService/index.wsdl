@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:invoice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:invoice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:invoice">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="invoice">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:string" />
+          <xsd:element name="nick" type="xsd:string" />
+          <xsd:element name="date" type="xsd:string" />
+          <xsd:element name="time" type="xsd:string" />
+          <xsd:element name="price" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="invoiceList">
+        <xsd:all>
+          <xsd:element minOccurs="0" maxOccurs="1" name="invoice" type="tns:invoice" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="createInvoiceRequest">
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+    <wsdl:part name="time" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="createInvoiceResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="payTheInvoiceRequest">
+    <wsdl:part name="invoiceId" type="xsd:string" />
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="payTheInvoiceResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllInvoiceListRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllInvoiceListResponse">
+    <wsdl:part name="return" type="tns:invoiceList" />
+  </wsdl:message>
+  <wsdl:message name="getAllInvoiceListSplitRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+    <wsdl:part name="token" type="xsd:string" />
+    <wsdl:part name="authority" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="getAllInvoiceListSplitResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="invoicePortType">
+    <wsdl:operation name="createInvoice">
+      <documentation>Yeni fatura oluÅturma iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:createInvoiceRequest" />
+      <wsdl:output message="tns:createInvoiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="payTheInvoice">
+      <documentation>Fatura Ã¶deme iÅlemi yapar.</documentation>
+      <wsdl:input message="tns:payTheInvoiceRequest" />
+      <wsdl:output message="tns:payTheInvoiceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllInvoiceList">
+      <documentation>Tum faturalari dondurur</documentation>
+      <wsdl:input message="tns:getAllInvoiceListRequest" />
+      <wsdl:output message="tns:getAllInvoiceListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllInvoiceListSplit">
+      <documentation>Tum faturalari dondurur</documentation>
+      <wsdl:input message="tns:getAllInvoiceListSplitRequest" />
+      <wsdl:output message="tns:getAllInvoiceListSplitResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="invoiceBinding" type="tns:invoicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="createInvoice">
+      <soap:operation soapAction="urn:invoice#createInvoice" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payTheInvoice">
+      <soap:operation soapAction="urn:invoice#payTheInvoice" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllInvoiceList">
+      <soap:operation soapAction="urn:invoice#getAllInvoiceList" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllInvoiceListSplit">
+      <soap:operation soapAction="urn:invoice#getAllInvoiceListSplit" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="invoice">
+    <wsdl:port name="invoicePort" binding="tns:invoiceBinding">
+      <soap:address location="http://aio.gencutopia.com/ws/rpc/invoice/invoice.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

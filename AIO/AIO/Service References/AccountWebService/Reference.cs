@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AIO.WebServis1 {
+namespace AIO.AccountWebService {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="urn:account", ConfigurationName="WebServis1.accountPortType")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="urn:account", ConfigurationName="AccountWebService.accountPortType")]
     public interface accountPortType {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#createAccount", ReplyAction="*")]
@@ -63,24 +63,24 @@ namespace AIO.WebServis1 {
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#getAllAccounts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        AIO.WebServis1.accountList getAllAccounts(string nick);
+        AIO.AccountWebService.accountList getAllAccounts(string nick);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#getAllAccounts", ReplyAction="*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        System.Threading.Tasks.Task<AIO.WebServis1.accountList> getAllAccountsAsync(string nick);
+        System.Threading.Tasks.Task<AIO.AccountWebService.accountList> getAllAccountsAsync(string nick);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#forgotPasswordToMailSend", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        AIO.WebServis1.accountList forgotPasswordToMailSend(string mail, string authority);
+        AIO.AccountWebService.accountList forgotPasswordToMailSend(string mail, string authority);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#forgotPasswordToMailSend", ReplyAction="*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        System.Threading.Tasks.Task<AIO.WebServis1.accountList> forgotPasswordToMailSendAsync(string mail, string authority);
+        System.Threading.Tasks.Task<AIO.AccountWebService.accountList> forgotPasswordToMailSendAsync(string mail, string authority);
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3221.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -111,7 +111,7 @@ namespace AIO.WebServis1 {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3062.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.3221.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -181,12 +181,12 @@ namespace AIO.WebServis1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface accountPortTypeChannel : AIO.WebServis1.accountPortType, System.ServiceModel.IClientChannel {
+    public interface accountPortTypeChannel : AIO.AccountWebService.accountPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class accountPortTypeClient : System.ServiceModel.ClientBase<AIO.WebServis1.accountPortType>, AIO.WebServis1.accountPortType {
+    public partial class accountPortTypeClient : System.ServiceModel.ClientBase<AIO.AccountWebService.accountPortType>, AIO.AccountWebService.accountPortType {
         
         public accountPortTypeClient() {
         }
@@ -247,19 +247,19 @@ namespace AIO.WebServis1 {
             return base.Channel.logoutAccountAsync(nick, token, authority);
         }
         
-        public AIO.WebServis1.accountList getAllAccounts(string nick) {
+        public AIO.AccountWebService.accountList getAllAccounts(string nick) {
             return base.Channel.getAllAccounts(nick);
         }
         
-        public System.Threading.Tasks.Task<AIO.WebServis1.accountList> getAllAccountsAsync(string nick) {
+        public System.Threading.Tasks.Task<AIO.AccountWebService.accountList> getAllAccountsAsync(string nick) {
             return base.Channel.getAllAccountsAsync(nick);
         }
         
-        public AIO.WebServis1.accountList forgotPasswordToMailSend(string mail, string authority) {
+        public AIO.AccountWebService.accountList forgotPasswordToMailSend(string mail, string authority) {
             return base.Channel.forgotPasswordToMailSend(mail, authority);
         }
         
-        public System.Threading.Tasks.Task<AIO.WebServis1.accountList> forgotPasswordToMailSendAsync(string mail, string authority) {
+        public System.Threading.Tasks.Task<AIO.AccountWebService.accountList> forgotPasswordToMailSendAsync(string mail, string authority) {
             return base.Channel.forgotPasswordToMailSendAsync(mail, authority);
         }
     }

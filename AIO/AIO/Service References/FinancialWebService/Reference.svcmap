@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2f1cc492-de28-454b-9d29-868ea67d7497" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6b9578c4-fc41-4c2e-b042-331eaee034e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,10 +19,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://aio.gencutopia.com/ws/account/index.php?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://aio.gencutopia.com/ws/financial/index.php?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="index.wsdl" MetadataType="Wsdl" ID="5494c6b4-801b-4680-9db8-0a95526bc5d0" SourceId="1" SourceUrl="http://aio.gencutopia.com/ws/account/index.php?wsdl" />
+    <MetadataFile FileName="index.wsdl" MetadataType="Wsdl" ID="a140e1f6-f9eb-40e1-a235-9e09c90590bb" SourceId="1" SourceUrl="http://aio.gencutopia.com/ws/financial/index.php?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

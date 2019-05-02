@@ -77,12 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\userprofile1\Reference.cs">
+    <Compile Include="Service References\AccountWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\WebServis1\Reference.cs">
+    <Compile Include="Service References\FinancialWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -145,14 +145,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\userprofile1\AIO.userprofile1.accountList.datasource">
+    <None Include="Service References\AccountWebService\AIO.AccountWebService.accountList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\userprofile1\index.wsdl" />
-    <None Include="Service References\WebServis1\AIO.WebServis1.accountList.datasource">
+    <None Include="Service References\AccountWebService\index.wsdl" />
+    <None Include="Service References\FinancialWebService\AIO.FinancialWebService.invoiceList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\WebServis1\index.wsdl" />
+    <None Include="Service References\FinancialWebService\index.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -254,29 +254,29 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\userprofile1\" />
-    <WCFMetadataStorage Include="Service References\WebServis1\" />
+    <WCFMetadataStorage Include="Service References\AccountWebService\" />
+    <WCFMetadataStorage Include="Service References\FinancialWebService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\WebServis1\configuration91.svcinfo" />
+    <None Include="Service References\AccountWebService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\WebServis1\configuration.svcinfo" />
+    <None Include="Service References\AccountWebService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\WebServis1\Reference.svcmap">
+    <None Include="Service References\AccountWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\userprofile1\configuration91.svcinfo" />
+    <None Include="Service References\FinancialWebService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\userprofile1\configuration.svcinfo" />
+    <None Include="Service References\FinancialWebService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\userprofile1\Reference.svcmap">
+    <None Include="Service References\FinancialWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
