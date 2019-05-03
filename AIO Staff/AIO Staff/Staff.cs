@@ -8,9 +8,9 @@ namespace AIO_Staff
 {
     class Staff
     {
-        public string Nick;
-        public string Token;
-        public string Authority;
+        public static string Nick;
+        public static string Token;
+        public static string Authority;
 
     }
 }

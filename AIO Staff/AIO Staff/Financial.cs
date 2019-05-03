@@ -8,10 +8,10 @@ namespace AIO_Staff
 {
     class Financial
     {
-        public string InvoiceId;
-        public string Nick;
-        public string Date;
-        public string Time;
-        public string Price;
+        public static string InvoiceId;
+        public static string Nick;
+        public static string Date;
+        public static string Time;
+        public static string Price;
     }
 }

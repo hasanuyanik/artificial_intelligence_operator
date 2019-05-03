@@ -8,10 +8,10 @@ namespace AIO
 {
     class Financial
     {
-        public int InvoiceId { get; set; }
-        public string Nick { get; set; }
-        public string Date { get; set; }
-        public string Time { get; set; }
-        public string Price { get; set; }
+        public static int InvoiceId { get; set; }
+        public static string Nick { get; set; }
+        public static string Date { get; set; }
+        public static string Time { get; set; }
+        public static string Price { get; set; }
     }
 }

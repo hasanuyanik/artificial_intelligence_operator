@@ -8,6 +8,6 @@ namespace AIO_Staff
 {
     class AppAuthority
     {
-        public string Authority = "3553d3cb84102b14e49479e3fdf5ccf428bf24bd8db772f7204c7451931258f1";
+        public static string Authority = "3553d3cb84102b14e49479e3fdf5ccf428bf24bd8db772f7204c7451931258f1";
     }
 }

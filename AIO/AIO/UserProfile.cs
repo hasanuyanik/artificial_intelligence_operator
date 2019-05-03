@@ -58,5 +58,10 @@ namespace AIO
         {
 
         }
+
+        private void nickLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

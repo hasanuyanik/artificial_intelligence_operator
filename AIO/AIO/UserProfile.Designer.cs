@@ -98,6 +98,7 @@
             this.nickLabel.Size = new System.Drawing.Size(226, 35);
             this.nickLabel.TabIndex = 3;
             this.nickLabel.Text = "HasanUYANIK ";
+            this.nickLabel.Click += new System.EventHandler(this.nickLabel_Click);
             // 
             // aioChatBtn
             // 

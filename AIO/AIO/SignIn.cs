@@ -61,8 +61,7 @@ namespace AIO
 
         private void signInBtn_Click(object sender, EventArgs e)
         {
-            var authorityApp = new AppAuthority();
-            string authority = authorityApp.Authority;
+            string authority = AppAuthority.Authority;
 
             string nick = nickTextBox.Text;
             string password = passwordTextBox.Text;
@@ -79,13 +78,13 @@ namespace AIO
             {
                 var loginReturn = loginAction.Split('_');
 
-                var newUser = new Customer();
-                newUser.Token = loginReturn[0];
-                newUser.Nick = loginReturn[1];
-                newUser.Money = loginReturn[2];
+                
+                Customer.Token = loginReturn[0];
+                Customer.Nick = loginReturn[1];
+                Customer.Money = loginReturn[2];
 
 
-                MessageBox.Show(newUser.Token+"Signed In.Please waiting…");
+                MessageBox.Show("Signed In.Please waiting…");
                 th = new Thread(openingUserProfile);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();

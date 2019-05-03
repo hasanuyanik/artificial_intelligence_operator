@@ -8,6 +8,6 @@ namespace AIO
 {
     class AppAuthority
     {
-        public string Authority = "0";
+        public static string Authority = "0";
     }
 }

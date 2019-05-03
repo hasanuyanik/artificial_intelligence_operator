@@ -93,6 +93,12 @@
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff.cs" />
+    <Compile Include="UserSessionScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSessionScreen.Designer.cs">
+      <DependentUpon>UserSessionScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSessionScreen.resx">
+      <DependentUpon>UserSessionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\AccountWebService\AIO_Staff.AccountWebService.accountList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -238,6 +247,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,8 +29,7 @@ namespace AIO
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            var authorityApp = new AppAuthority();
-            string authority = authorityApp.Authority;
+            string authority = AppAuthority.Authority;
             string nick = nickTextBox.Text;
             string mail = mailTextBox.Text;
             string password = passwordTextBox.Text;
