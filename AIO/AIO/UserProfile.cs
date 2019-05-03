@@ -46,11 +46,16 @@ namespace AIO
 
         private void RemoveAccountBtn_Click(object sender, EventArgs e)
         {
-            userprofile1.accountPortTypeClient servisaccount = new userprofile1.accountPortTypeClient();
+            AccountWebService.accountPortTypeClient servisaccount = new AccountWebService.accountPortTypeClient();
 
             
 
 
+
+        }
+
+        private void UserProfile_Load(object sender, EventArgs e)
+        {
 
         }
     }

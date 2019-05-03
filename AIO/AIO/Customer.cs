@@ -8,10 +8,9 @@ namespace AIO
 {
     class Customer
     {
-        public string Nick;
-        public string Money;
-        public string Token;
-        public string Authority;
+        public string Nick { get; set; }
+        public string Money { get; set; }
+        public string Token { get; set; }
 
     }
 }

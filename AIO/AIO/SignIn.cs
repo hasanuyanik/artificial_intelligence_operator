@@ -38,7 +38,7 @@ namespace AIO
             th = new Thread(openingSignUp);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
-            Close();
+            this.Close();
         }
 
         private void openingSignUp()
@@ -51,7 +51,7 @@ namespace AIO
             th = new Thread(openingForgotPassword);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
-            Close();
+            this.Close();
         }
 
         private void openingForgotPassword()
@@ -66,7 +66,7 @@ namespace AIO
 
             string nick = nickTextBox.Text;
             string password = passwordTextBox.Text;
-            WebServis1.accountPortTypeClient soap = new WebServis1.accountPortTypeClient();
+            AccountWebService.accountPortTypeClient soap = new AccountWebService.accountPortTypeClient();
 
 
             string loginAction = soap.loginAccount(nick,password,authority);
@@ -84,13 +84,22 @@ namespace AIO
                 newUser.Nick = loginReturn[1];
                 newUser.Money = loginReturn[2];
 
-                MessageBox.Show(loginAction+"Signed In.Please waiting…");
+
+                MessageBox.Show(newUser.Token+"Signed In.Please waiting…");
                 th = new Thread(openingUserProfile);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
-                Close();
+                th = new Thread(openingUserSessionScreen);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+                this.Close();
             }
             
+        }
+
+        private void openingUserSessionScreen()
+        {
+            Application.Run(new UserSessionScreen());
         }
 
         private void openingUserProfile()

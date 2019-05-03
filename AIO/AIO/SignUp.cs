@@ -37,7 +37,7 @@ namespace AIO
                                 
 
 
-            WebServis1.accountPortTypeClient YeniWebServis = new WebServis1.accountPortTypeClient();
+            AccountWebService.accountPortTypeClient YeniWebServis = new AccountWebService.accountPortTypeClient();
 
             string HesapBilgi = YeniWebServis.createAccount(nick, mail, password, authority);
             if (HesapBilgi == "0")

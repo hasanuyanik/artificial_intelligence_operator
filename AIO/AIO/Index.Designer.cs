@@ -97,6 +97,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Index";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Index_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
