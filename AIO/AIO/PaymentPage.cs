@@ -16,5 +16,33 @@ namespace AIO
         {
             InitializeComponent();
         }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            PaymentList PymList = new PaymentList();
+            PymList.Show();
+            this.Hide();
+        }
+
+        private void aioChatBtn_Click(object sender, EventArgs e)
+        {
+            //AIOChat aiochat = new AIOChat();
+            //aiochat.show();
+            //this.Hide();
+        }
+
+        private void profileUpdateBtn_Click(object sender, EventArgs e)
+        {
+            ProfileUpdate PrfUpdate = new ProfileUpdate();
+            PrfUpdate.Show();
+            this.Hide();
+        }
+
+        private void paymentListBtn_Click(object sender, EventArgs e)
+        {
+            PaymentList PymList = new PaymentList();
+            PymList.Show();
+            this.Hide();
+        }
     }
 }

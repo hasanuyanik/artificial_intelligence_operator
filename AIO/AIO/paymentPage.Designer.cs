@@ -82,6 +82,7 @@
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 3;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // aioChatBtn
             // 
@@ -95,6 +96,7 @@
             this.aioChatBtn.TabIndex = 4;
             this.aioChatBtn.Text = "AIO Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioChatBtn.Click += new System.EventHandler(this.aioChatBtn_Click);
             // 
             // profileUpdateBtn
             // 
@@ -108,6 +110,7 @@
             this.profileUpdateBtn.TabIndex = 5;
             this.profileUpdateBtn.Text = "Profile Update";
             this.profileUpdateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileUpdateBtn.Click += new System.EventHandler(this.profileUpdateBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -121,6 +124,7 @@
             this.paymentListBtn.TabIndex = 6;
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // profileBtn
             // 
@@ -166,7 +170,7 @@
             this.Controls.Add(this.logo);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PaymentPage";
             this.Text = "PaymentPage";
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
