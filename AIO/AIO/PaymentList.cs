@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace AIO
 {
@@ -15,6 +16,22 @@ namespace AIO
         public PaymentList()
         {
             InitializeComponent();
+        }
+        string ReturnStatu;
+        private void PaymentList_Load(object sender, EventArgs e)
+        {
+            FinancialWebService.invoicePortTypeClient serviceSoap = new FinancialWebService.invoicePortTypeClient();
+            string ReturnStatu = serviceSoap.getAllInvoiceListSplit(Customer.Nick, Customer.Token, AppAuthority.Authority);
+            selectInvolceListbox.Items.Add(ReturnStatu);
+        }
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void payBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(ReturnStatu);
         }
     }
 }

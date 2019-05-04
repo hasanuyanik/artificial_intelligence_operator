@@ -30,10 +30,9 @@ namespace AIO
 
         private void PaymentListBtn_Click(object sender, EventArgs e)
         {
-            Form payment = new PaymentList();
-            payment.Show();
-            this.Close();
-
+            PaymentList PymList = new PaymentList();
+            PymList.Show();
+            this.Hide();
 
         }
 
