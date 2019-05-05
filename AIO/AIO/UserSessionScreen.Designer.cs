@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.nickLabel = new System.Windows.Forms.Label();
             this.logoutBtn = new System.Windows.Forms.Label();
             this.moneyLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // nickLabel
@@ -71,6 +73,11 @@
             this.moneyLabel.Size = new System.Drawing.Size(77, 17);
             this.moneyLabel.TabIndex = 2;
             this.moneyLabel.Text = "AIO Money";
+            this.moneyLabel.Click += new System.EventHandler(this.moneyLabel_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // UserSessionScreen
             // 
@@ -98,5 +105,6 @@
         private System.Windows.Forms.Label nickLabel;
         private System.Windows.Forms.Label logoutBtn;
         private System.Windows.Forms.Label moneyLabel;
+        private System.Windows.Forms.Timer timer1;
     }
 }

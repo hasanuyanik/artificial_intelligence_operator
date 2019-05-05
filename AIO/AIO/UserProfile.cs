@@ -55,7 +55,19 @@ namespace AIO
 
         private void UserProfile_Load(object sender, EventArgs e)
         {
+            // Güncel Money değeri için
 
+            AccountWebService.accountPortTypeClient soap = new AccountWebService.accountPortTypeClient();
+
+            string money = soap.updatedFetchSessionData(Customer.Nick, Customer.Token);
+
+            if (money != "0")
+            {
+                Customer.Money = money;
+                
+            }
+
+            // Güncel Money değeri için
         }
 
         private void nickLabel_Click(object sender, EventArgs e)

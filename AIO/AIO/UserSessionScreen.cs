@@ -14,6 +14,7 @@ namespace AIO
     public partial class UserSessionScreen : Form
     {
         Thread th;
+        static int ticks;
         public UserSessionScreen()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace AIO
 
             nickLabel.Text = Customer.Nick;
             moneyLabel.Text = Customer.Money+" AIO Money";
+
             
 
         }
@@ -53,12 +55,40 @@ namespace AIO
 
         private void UserSessionScreen_Load(object sender, EventArgs e)
         {
-       
+            timer1.Start();
         }
 
         private void nickLabel_Click(object sender, EventArgs e)
         {
            
         }
+
+        private void moneyLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ticks++;
+
+
+
+            AccountWebService.accountPortTypeClient soap = new AccountWebService.accountPortTypeClient();
+
+            string money = soap.updatedFetchSessionData(Customer.Nick, Customer.Token);
+
+
+            if (money != "0")
+            {
+
+                Customer.Money = money;
+
+            }
+
+            moneyLabel.Text = Customer.Money + " AIO Money";
+        }
+           
+            
     }
 }
