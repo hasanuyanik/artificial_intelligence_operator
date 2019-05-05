@@ -47,9 +47,9 @@
             this.payBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.payBtn.ForeColor = System.Drawing.Color.White;
             this.payBtn.Image = ((System.Drawing.Image)(resources.GetObject("payBtn.Image")));
-            this.payBtn.Location = new System.Drawing.Point(388, 259);
+            this.payBtn.Location = new System.Drawing.Point(522, 304);
             this.payBtn.Name = "payBtn";
-            this.payBtn.Size = new System.Drawing.Size(116, 41);
+            this.payBtn.Size = new System.Drawing.Size(163, 52);
             this.payBtn.TabIndex = 16;
             this.payBtn.Text = "Pay";
             this.payBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,12 +61,13 @@
             this.profileBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.profileBtn.ForeColor = System.Drawing.Color.White;
             this.profileBtn.Image = ((System.Drawing.Image)(resources.GetObject("profileBtn.Image")));
-            this.profileBtn.Location = new System.Drawing.Point(364, 360);
+            this.profileBtn.Location = new System.Drawing.Point(470, 415);
             this.profileBtn.Name = "profileBtn";
-            this.profileBtn.Size = new System.Drawing.Size(78, 41);
+            this.profileBtn.Size = new System.Drawing.Size(112, 53);
             this.profileBtn.TabIndex = 15;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -74,12 +75,13 @@
             this.paymentListBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.paymentListBtn.ForeColor = System.Drawing.Color.White;
             this.paymentListBtn.Image = ((System.Drawing.Image)(resources.GetObject("paymentListBtn.Image")));
-            this.paymentListBtn.Location = new System.Drawing.Point(232, 357);
+            this.paymentListBtn.Location = new System.Drawing.Point(306, 416);
             this.paymentListBtn.Name = "paymentListBtn";
-            this.paymentListBtn.Size = new System.Drawing.Size(116, 41);
+            this.paymentListBtn.Size = new System.Drawing.Size(158, 50);
             this.paymentListBtn.TabIndex = 14;
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // profileUpdateBtn
             // 
@@ -87,12 +89,13 @@
             this.profileUpdateBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.profileUpdateBtn.ForeColor = System.Drawing.Color.White;
             this.profileUpdateBtn.Image = ((System.Drawing.Image)(resources.GetObject("profileUpdateBtn.Image")));
-            this.profileUpdateBtn.Location = new System.Drawing.Point(100, 357);
+            this.profileUpdateBtn.Location = new System.Drawing.Point(140, 416);
             this.profileUpdateBtn.Name = "profileUpdateBtn";
-            this.profileUpdateBtn.Size = new System.Drawing.Size(116, 41);
+            this.profileUpdateBtn.Size = new System.Drawing.Size(160, 50);
             this.profileUpdateBtn.TabIndex = 13;
             this.profileUpdateBtn.Text = "Profile Update";
             this.profileUpdateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileUpdateBtn.Click += new System.EventHandler(this.profileUpdateBtn_Click);
             // 
             // aioChatBtn
             // 
@@ -100,9 +103,9 @@
             this.aioChatBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.aioChatBtn.ForeColor = System.Drawing.Color.White;
             this.aioChatBtn.Image = ((System.Drawing.Image)(resources.GetObject("aioChatBtn.Image")));
-            this.aioChatBtn.Location = new System.Drawing.Point(10, 357);
+            this.aioChatBtn.Location = new System.Drawing.Point(33, 410);
             this.aioChatBtn.Name = "aioChatBtn";
-            this.aioChatBtn.Size = new System.Drawing.Size(78, 41);
+            this.aioChatBtn.Size = new System.Drawing.Size(98, 58);
             this.aioChatBtn.TabIndex = 12;
             this.aioChatBtn.Text = "AIO Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,7 +115,7 @@
             this.selectInvoicelLabel.BackColor = System.Drawing.Color.Transparent;
             this.selectInvoicelLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.selectInvoicelLabel.ForeColor = System.Drawing.Color.White;
-            this.selectInvoicelLabel.Location = new System.Drawing.Point(221, 50);
+            this.selectInvoicelLabel.Location = new System.Drawing.Point(283, 91);
             this.selectInvoicelLabel.Name = "selectInvoicelLabel";
             this.selectInvoicelLabel.Size = new System.Drawing.Size(154, 23);
             this.selectInvoicelLabel.TabIndex = 11;
@@ -123,19 +126,20 @@
             this.selectInvolceListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.selectInvolceListbox.FormattingEnabled = true;
             this.selectInvolceListbox.ItemHeight = 18;
-            this.selectInvolceListbox.Location = new System.Drawing.Point(224, 76);
+            this.selectInvolceListbox.Location = new System.Drawing.Point(287, 117);
             this.selectInvolceListbox.Name = "selectInvolceListbox";
-            this.selectInvolceListbox.Size = new System.Drawing.Size(297, 166);
+            this.selectInvolceListbox.Size = new System.Drawing.Size(387, 184);
             this.selectInvolceListbox.TabIndex = 10;
+            this.selectInvolceListbox.SelectedIndexChanged += new System.EventHandler(this.selectInvolceListbox_SelectedIndexChanged);
             // 
             // middlelogo
             // 
             this.middlelogo.BackColor = System.Drawing.Color.Transparent;
             this.middlelogo.BackgroundImage = global::AIO.Properties.Resources.logo;
             this.middlelogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.middlelogo.Location = new System.Drawing.Point(20, 135);
+            this.middlelogo.Location = new System.Drawing.Point(60, 175);
             this.middlelogo.Name = "middlelogo";
-            this.middlelogo.Size = new System.Drawing.Size(131, 165);
+            this.middlelogo.Size = new System.Drawing.Size(175, 203);
             this.middlelogo.TabIndex = 9;
             this.middlelogo.TabStop = false;
             // 
@@ -144,7 +148,7 @@
             this.closeBtn.BackColor = System.Drawing.Color.Transparent;
             this.closeBtn.ForeColor = System.Drawing.Color.White;
             this.closeBtn.Image = global::AIO.Properties.Resources.closeBtn;
-            this.closeBtn.Location = new System.Drawing.Point(493, 7);
+            this.closeBtn.Location = new System.Drawing.Point(658, 9);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(27, 29);
             this.closeBtn.TabIndex = 17;
@@ -155,7 +159,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(530, 411);
+            this.ClientSize = new System.Drawing.Size(706, 506);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.payBtn);
             this.Controls.Add(this.profileBtn);

@@ -54,6 +54,7 @@
             // 
             // invoiceInformationListBox
             // 
+            this.invoiceInformationListBox.Enabled = false;
             this.invoiceInformationListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.invoiceInformationListBox.FormattingEnabled = true;
             this.invoiceInformationListBox.ItemHeight = 18;
@@ -78,7 +79,7 @@
             this.closeBtn.BackColor = System.Drawing.Color.Transparent;
             this.closeBtn.ForeColor = System.Drawing.Color.White;
             this.closeBtn.Image = global::AIO.Properties.Resources.closeBtn;
-            this.closeBtn.Location = new System.Drawing.Point(653, 28);
+            this.closeBtn.Location = new System.Drawing.Point(658, 21);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 3;
@@ -138,6 +139,7 @@
             this.profileBtn.TabIndex = 7;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // payBtn
             // 
@@ -145,12 +147,13 @@
             this.payBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.payBtn.ForeColor = System.Drawing.Color.White;
             this.payBtn.Image = ((System.Drawing.Image)(resources.GetObject("payBtn.Image")));
-            this.payBtn.Location = new System.Drawing.Point(520, 331);
+            this.payBtn.Location = new System.Drawing.Point(520, 319);
             this.payBtn.Name = "payBtn";
-            this.payBtn.Size = new System.Drawing.Size(154, 50);
+            this.payBtn.Size = new System.Drawing.Size(154, 52);
             this.payBtn.TabIndex = 8;
             this.payBtn.Text = "Pay";
             this.payBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.payBtn.Click += new System.EventHandler(this.payBtn_Click);
             // 
             // PaymentPage
             // 
@@ -173,6 +176,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PaymentPage";
             this.Text = "PaymentPage";
+            this.Load += new System.EventHandler(this.PaymentPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
