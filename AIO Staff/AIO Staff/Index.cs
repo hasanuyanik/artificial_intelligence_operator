@@ -34,7 +34,7 @@ namespace AIO_Staff
 
         private void openingSignIn()
         {
-            //Application.Run(new SignIn());
+           // Application.Run(new SignIn());
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,6 +48,14 @@ namespace AIO_Staff
         private void openingSignUp()
         {
             Application.Run(new SignUp());
+        }
+
+        private void Index_Load(object sender, EventArgs e)
+        {
+            th = new Thread(openingSignUp);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
         }
     }
 }
