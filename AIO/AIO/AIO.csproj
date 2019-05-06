@@ -50,6 +50,12 @@
   <ItemGroup>
     <Compile Include="AppAuthority.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerChatPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerChatPage.Designer.cs">
+      <DependentUpon>CustomerChatPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Financial.cs" />
     <Compile Include="PaymentList.cs">
       <SubType>Form</SubType>
@@ -111,6 +117,9 @@
     <Compile Include="UserSessionScreen.Designer.cs">
       <DependentUpon>UserSessionScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomerChatPage.resx">
+      <DependentUpon>CustomerChatPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +304,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smallLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeBtn4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageScreen1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

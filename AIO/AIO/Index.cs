@@ -50,10 +50,8 @@ namespace AIO
         {
             Application.Run(new SignUp());
         }
+       
 
-        private void Index_Load(object sender, EventArgs e)
-        {
-            
-        }
+      
     }
 }
