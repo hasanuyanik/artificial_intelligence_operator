@@ -37,7 +37,9 @@
             this.messageScreenListBox = new System.Windows.Forms.ListBox();
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.sendBtn = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // logo
@@ -87,15 +89,17 @@
             this.aioSendBtn.TabIndex = 3;
             this.aioSendBtn.Text = "SEND FOR AIO";
             this.aioSendBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioSendBtn.Click += new System.EventHandler(this.aioSendBtn_Click);
             // 
             // messageScreenListBox
             // 
             this.messageScreenListBox.BackColor = System.Drawing.Color.Black;
+            this.messageScreenListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.messageScreenListBox.ForeColor = System.Drawing.Color.White;
             this.messageScreenListBox.FormattingEnabled = true;
-            this.messageScreenListBox.Location = new System.Drawing.Point(154, 132);
+            this.messageScreenListBox.Location = new System.Drawing.Point(164, 152);
             this.messageScreenListBox.Name = "messageScreenListBox";
-            this.messageScreenListBox.Size = new System.Drawing.Size(533, 290);
+            this.messageScreenListBox.Size = new System.Drawing.Size(507, 273);
             this.messageScreenListBox.TabIndex = 4;
             // 
             // messageTextBox
@@ -124,6 +128,18 @@
             this.sendBtn.TabIndex = 6;
             this.sendBtn.Text = "SEND";
             this.sendBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::AIO_Staff.Properties.Resources.messageScreen;
+            this.pictureBox1.Image = global::AIO_Staff.Properties.Resources.messageScreen;
+            this.pictureBox1.Location = new System.Drawing.Point(154, 140);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(533, 294);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // StaffChatPage
             // 
@@ -138,11 +154,13 @@
             this.Controls.Add(this.aioMessageTextBox);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.logo);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffChatPage";
             this.Text = "StaffChatPage";
             this.Load += new System.EventHandler(this.StaffChatPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +176,6 @@
         private System.Windows.Forms.ListBox messageScreenListBox;
         private System.Windows.Forms.TextBox messageTextBox;
         private System.Windows.Forms.Label sendBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

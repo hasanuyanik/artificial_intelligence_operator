@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AIMLbot;
 
 namespace AIO_Staff
 {
@@ -66,6 +67,26 @@ namespace AIO_Staff
                 messageTextBox.ForeColor = Color.Silver;
                 siyah = false;
             }
+        }
+
+        private void sendBtn_Click(object sender, EventArgs e)
+        {
+            /*Bot AI = new Bot();
+            AI.loadSettings();
+            AI.loadAIMLFromFiles();
+            AI.isAcceptingUserInput = false;
+            User myuser = new User("Username Here", AI);
+            AI.isAcceptingUserInput = true;
+            Request r = new Request(messageTextBox.Text, myuser, AI);
+            Result res = AI.Chat(r);
+            messageScreenListBox.Text = "AIO : " + res.Output;*/
+            messageScreenListBox.Items.Add("ID : " + messageTextBox.Text);
+        }
+
+        private void aioSendBtn_Click(object sender, EventArgs e)
+        {
+            messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
+
         }
     }
 }

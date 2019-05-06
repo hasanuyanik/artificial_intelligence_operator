@@ -52,7 +52,19 @@ namespace AIO_Staff
 
         private void Index_Load(object sender, EventArgs e)
         {
-            th = new Thread(openingSignUp);
+            th = new Thread(x);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
+        }
+        private void x()
+        {
+            Application.Run(new StaffChatPage());
+        }
+
+        private void Index_Load_1(object sender, EventArgs e)
+        {
+            th = new Thread(x);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
             this.Close();

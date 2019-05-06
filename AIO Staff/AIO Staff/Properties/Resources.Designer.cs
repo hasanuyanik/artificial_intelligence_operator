@@ -233,6 +233,16 @@ namespace AIO_Staff.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap messageScreen {
+            get {
+                object obj = ResourceManager.GetObject("messageScreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap messageTextBox {
             get {
                 object obj = ResourceManager.GetObject("messageTextBox", resourceCulture);
