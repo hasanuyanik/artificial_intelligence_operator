@@ -12,5 +12,6 @@ namespace AIO_Staff
         public static string Token;
         public static string Authority;
 
+        public static string Money { get; internal set; }
     }
 }

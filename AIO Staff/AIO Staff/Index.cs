@@ -34,7 +34,7 @@ namespace AIO_Staff
 
         private void openingSignIn()
         {
-           //Application.Run(new SignIn());
+           Application.Run(new SignIn());
         }
 
         private void label1_Click(object sender, EventArgs e)

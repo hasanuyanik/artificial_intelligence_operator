@@ -5,46 +5,71 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 
 namespace AIO_Staff
 {
-    public partial class SignIn : Form
+    public partial class ForgotPassword : Form
     {
         Thread th;
-        public SignIn()
+        public ForgotPassword()
         {
             InitializeComponent();
         }
 
         private void signInBtn_Click(object sender, EventArgs e)
         {
+            th = new Thread(openingSignIn);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
+        }
+
+        private void openingSignIn()
+        {
+            Application.Run(new SignIn());
+        }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+            th = new Thread(openingSignUp);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
+        }
+
+        private void openingSignUp()
+        {
+            Application.Run(new SignUp());
+        }
+
+        private void sendBtn_Click(object sender, EventArgs e)
+        {
             string authority = AppAuthority.Authority;
 
-            string nick = nickTextBox.Text;
-            string password = passwordTextBox.Text;
+            string mail = mailTextBox.Text;
             AccountWebService.accountPortTypeClient soap = new AccountWebService.accountPortTypeClient();
 
 
-            string loginAction = soap.loginAccount(nick, password, authority);
+            string forgotPassword = soap.forgotPasswordToMailSend(mail, authority).ToString();
 
-            if (loginAction == "0")
+            if (forgotPassword == "0")
             {
-                MessageBox.Show("Sign In Failed!");
+                MessageBox.Show("Password operation failed!");
             }
             else
             {
-                var loginReturn = loginAction.Split('_');
+                var loginReturn = forgotPassword.Split('_');
 
 
                 Staff.Token = loginReturn[0];
                 Staff.Nick = loginReturn[1];
-                //Staff.Money = loginReturn[2];
+                Staff.Money = loginReturn[2];
 
 
-                MessageBox.Show("Signed In.Please waiting…");
+                MessageBox.Show("Your new password has been sent to your mail. Check your mail.");
                 th = new Thread(openingUserProfile);
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
@@ -53,7 +78,6 @@ namespace AIO_Staff
                 th.Start();
                 this.Close();
             }
-
         }
 
         private void openingUserSessionScreen()
@@ -73,37 +97,11 @@ namespace AIO_Staff
             th.Start();
             this.Close();
         }
+
         private void openingIndex()
         {
             Application.Run(new Index());
         }
-
-        private void signUpBtn_Click(object sender, EventArgs e)
-        {
-
-            th = new Thread(openingSignUp);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-            this.Close();
-        }
-
-        private void openingSignUp()
-        {
-            Application.Run(new SignUp());
-        }
-
-        private void forgotPasswordLabel_Click(object sender, EventArgs e)
-        {
-            th = new Thread(openingForgotPassword);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
-            this.Close();
-        }
-
-        private void openingForgotPassword()
-        {
-            Application.Run(new ForgotPassword());
-        }
     }
-    
-}
+    }
+

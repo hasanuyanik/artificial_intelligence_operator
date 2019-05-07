@@ -76,13 +76,14 @@
             // 
             this.forgotPasswordLabel.AutoSize = true;
             this.forgotPasswordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forgotPasswordLabel.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.forgotPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.forgotPasswordLabel.ForeColor = System.Drawing.Color.Red;
             this.forgotPasswordLabel.Location = new System.Drawing.Point(372, 269);
             this.forgotPasswordLabel.Name = "forgotPasswordLabel";
-            this.forgotPasswordLabel.Size = new System.Drawing.Size(143, 24);
+            this.forgotPasswordLabel.Size = new System.Drawing.Size(174, 25);
             this.forgotPasswordLabel.TabIndex = 30;
             this.forgotPasswordLabel.Text = "Forgot Password";
+            this.forgotPasswordLabel.Click += new System.EventHandler(this.forgotPasswordLabel_Click);
             // 
             // passwordTextBox
             // 
@@ -111,11 +112,11 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
             this.passwordLabel.Location = new System.Drawing.Point(372, 183);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(87, 24);
+            this.passwordLabel.Size = new System.Drawing.Size(106, 25);
             this.passwordLabel.TabIndex = 25;
             this.passwordLabel.Text = "Password";
             // 
@@ -123,11 +124,11 @@
             // 
             this.nickLabel.AutoSize = true;
             this.nickLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nickLabel.Font = new System.Drawing.Font("Arial Narrow", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nickLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.nickLabel.ForeColor = System.Drawing.Color.White;
             this.nickLabel.Location = new System.Drawing.Point(372, 98);
             this.nickLabel.Name = "nickLabel";
-            this.nickLabel.Size = new System.Drawing.Size(44, 24);
+            this.nickLabel.Size = new System.Drawing.Size(54, 25);
             this.nickLabel.TabIndex = 24;
             this.nickLabel.Text = "Nick";
             // 
