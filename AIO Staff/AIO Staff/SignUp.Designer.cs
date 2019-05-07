@@ -67,6 +67,7 @@
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 1;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // nickLabel
             // 
@@ -82,6 +83,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::AIO_Staff.Properties.Resources.textbox3;
             this.pictureBox1.Location = new System.Drawing.Point(407, 121);
             this.pictureBox1.Name = "pictureBox1";
@@ -95,7 +97,7 @@
             this.nickTextBox.Location = new System.Drawing.Point(419, 132);
             this.nickTextBox.Multiline = true;
             this.nickTextBox.Name = "nickTextBox";
-            this.nickTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nickTextBox.Size = new System.Drawing.Size(229, 20);
             this.nickTextBox.TabIndex = 4;
             // 
             // mailLabel
@@ -112,6 +114,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::AIO_Staff.Properties.Resources.textbox4;
             this.pictureBox2.Location = new System.Drawing.Point(407, 208);
             this.pictureBox2.Name = "pictureBox2";
@@ -125,7 +128,7 @@
             this.mailTextBox.Location = new System.Drawing.Point(419, 217);
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
-            this.mailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mailTextBox.Size = new System.Drawing.Size(229, 20);
             this.mailTextBox.TabIndex = 7;
             // 
             // passwordLabel
@@ -142,6 +145,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::AIO_Staff.Properties.Resources.textbox5;
             this.pictureBox3.Location = new System.Drawing.Point(407, 284);
             this.pictureBox3.Name = "pictureBox3";
@@ -155,7 +159,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(419, 289);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(229, 20);
             this.passwordTextBox.TabIndex = 10;
             // 
             // signUpBtn
@@ -170,6 +174,7 @@
             this.signUpBtn.TabIndex = 11;
             this.signUpBtn.Text = "Sign Up";
             this.signUpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
             // signInBtn
             // 
@@ -183,6 +188,7 @@
             this.signInBtn.TabIndex = 12;
             this.signInBtn.Text = "Sign In";
             this.signInBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
             // 
             // SignUp
             // 

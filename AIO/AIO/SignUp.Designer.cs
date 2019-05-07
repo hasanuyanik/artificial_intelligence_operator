@@ -146,7 +146,7 @@
             this.nickTextBox.Location = new System.Drawing.Point(415, 97);
             this.nickTextBox.Multiline = true;
             this.nickTextBox.Name = "nickTextBox";
-            this.nickTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nickTextBox.Size = new System.Drawing.Size(235, 20);
             this.nickTextBox.TabIndex = 11;
             // 
             // pictureBox2
@@ -165,7 +165,7 @@
             this.mailTextBox.Location = new System.Drawing.Point(415, 199);
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
-            this.mailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.mailTextBox.Size = new System.Drawing.Size(235, 20);
             this.mailTextBox.TabIndex = 13;
             // 
             // pictureBox3
@@ -184,7 +184,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(415, 288);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(235, 20);
             this.passwordTextBox.TabIndex = 15;
             // 
             // SignUp
