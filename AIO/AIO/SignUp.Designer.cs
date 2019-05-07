@@ -143,7 +143,7 @@
             // nickTextBox
             // 
             this.nickTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nickTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nickTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.nickTextBox.Location = new System.Drawing.Point(405, 97);
             this.nickTextBox.Multiline = true;
             this.nickTextBox.Name = "nickTextBox";
@@ -163,7 +163,7 @@
             // mailTextBox
             // 
             this.mailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mailTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mailTextBox.Location = new System.Drawing.Point(405, 195);
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
@@ -183,13 +183,13 @@
             // passwordTextBox
             // 
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.passwordTextBox.Location = new System.Drawing.Point(405, 279);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.PasswordChar = '●';
             this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
-            this.passwordTextBox.TabIndex = 15;
+            this.passwordTextBox.TabIndex = 18;
             // 
             // SignUp
             // 

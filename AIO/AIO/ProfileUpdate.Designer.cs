@@ -92,7 +92,7 @@
             this.aioChatBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.aioChatBtn.ForeColor = System.Drawing.Color.Transparent;
             this.aioChatBtn.Image = global::AIO.Properties.Resources.btn32;
-            this.aioChatBtn.Location = new System.Drawing.Point(12, 422);
+            this.aioChatBtn.Location = new System.Drawing.Point(12, 438);
             this.aioChatBtn.Name = "aioChatBtn";
             this.aioChatBtn.Size = new System.Drawing.Size(104, 50);
             this.aioChatBtn.TabIndex = 5;
@@ -106,7 +106,7 @@
             this.profileBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.profileBtn.ForeColor = System.Drawing.Color.Transparent;
             this.profileBtn.Image = global::AIO.Properties.Resources.btn33;
-            this.profileBtn.Location = new System.Drawing.Point(282, 422);
+            this.profileBtn.Location = new System.Drawing.Point(282, 438);
             this.profileBtn.Name = "profileBtn";
             this.profileBtn.Size = new System.Drawing.Size(104, 50);
             this.profileBtn.TabIndex = 6;
@@ -120,7 +120,7 @@
             this.paymentListBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.paymentListBtn.ForeColor = System.Drawing.Color.Transparent;
             this.paymentListBtn.Image = global::AIO.Properties.Resources.btn21;
-            this.paymentListBtn.Location = new System.Drawing.Point(122, 422);
+            this.paymentListBtn.Location = new System.Drawing.Point(122, 438);
             this.paymentListBtn.Name = "paymentListBtn";
             this.paymentListBtn.Size = new System.Drawing.Size(154, 50);
             this.paymentListBtn.TabIndex = 7;
@@ -145,9 +145,9 @@
             this.passwordTextBox.Location = new System.Drawing.Point(399, 214);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.PasswordChar = '●';
             this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
-            this.passwordTextBox.TabIndex = 9;
+            this.passwordTextBox.TabIndex = 18;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ProfileUpdate
