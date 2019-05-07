@@ -36,7 +36,7 @@
             this.profileBtn = new System.Windows.Forms.Label();
             this.paymentListBtn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.passwordTextbox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 1;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // passwordLabel
             // 
@@ -83,6 +84,7 @@
             this.saveBtn.TabIndex = 4;
             this.saveBtn.Text = "Save";
             this.saveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // aioChatBtn
             // 
@@ -96,6 +98,7 @@
             this.aioChatBtn.TabIndex = 5;
             this.aioChatBtn.Text = "AIO Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioChatBtn.Click += new System.EventHandler(this.aioChatBtn_Click);
             // 
             // profileBtn
             // 
@@ -109,6 +112,7 @@
             this.profileBtn.TabIndex = 6;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -122,6 +126,7 @@
             this.paymentListBtn.TabIndex = 7;
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // pictureBox1
             // 
@@ -133,15 +138,15 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // passwordTextbox
+            // passwordTextBox
             // 
-            this.passwordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextbox.Location = new System.Drawing.Point(402, 214);
-            this.passwordTextbox.Multiline = true;
-            this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(100, 20);
-            this.passwordTextbox.TabIndex = 9;
-            this.passwordTextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextBox.Location = new System.Drawing.Point(402, 214);
+            this.passwordTextBox.Multiline = true;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(236, 20);
+            this.passwordTextBox.TabIndex = 9;
+            this.passwordTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ProfileUpdate
             // 
@@ -149,7 +154,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AIO.Properties.Resources.bg3;
             this.ClientSize = new System.Drawing.Size(706, 506);
-            this.Controls.Add(this.passwordTextbox);
+            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.paymentListBtn);
             this.Controls.Add(this.profileBtn);
@@ -178,6 +183,6 @@
         private System.Windows.Forms.Label profileBtn;
         private System.Windows.Forms.Label paymentListBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox passwordTextbox;
+        private System.Windows.Forms.TextBox passwordTextBox;
     }
 }
