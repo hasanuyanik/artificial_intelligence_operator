@@ -81,11 +81,11 @@ namespace AIO.AccountWebService {
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#forgotPasswordToMailSend", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        AIO.AccountWebService.accountList forgotPasswordToMailSend(string mail, string authority);
+        string forgotPasswordToMailSend(string mail, string authority);
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#forgotPasswordToMailSend", ReplyAction="*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        System.Threading.Tasks.Task<AIO.AccountWebService.accountList> forgotPasswordToMailSendAsync(string mail, string authority);
+        System.Threading.Tasks.Task<string> forgotPasswordToMailSendAsync(string mail, string authority);
     }
     
     /// <remarks/>
@@ -272,11 +272,11 @@ namespace AIO.AccountWebService {
             return base.Channel.getAllAccountsAsync(nick);
         }
         
-        public AIO.AccountWebService.accountList forgotPasswordToMailSend(string mail, string authority) {
+        public string forgotPasswordToMailSend(string mail, string authority) {
             return base.Channel.forgotPasswordToMailSend(mail, authority);
         }
         
-        public System.Threading.Tasks.Task<AIO.AccountWebService.accountList> forgotPasswordToMailSendAsync(string mail, string authority) {
+        public System.Threading.Tasks.Task<string> forgotPasswordToMailSendAsync(string mail, string authority) {
             return base.Channel.forgotPasswordToMailSendAsync(mail, authority);
         }
     }

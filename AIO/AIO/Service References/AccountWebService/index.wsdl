@@ -77,7 +77,7 @@
     <wsdl:part name="authority" type="xsd:string" />
   </wsdl:message>
   <wsdl:message name="forgotPasswordToMailSendResponse">
-    <wsdl:part name="return" type="tns:accountList" />
+    <wsdl:part name="return" type="xsd:string" />
   </wsdl:message>
   <wsdl:portType name="accountPortType">
     <wsdl:operation name="createAccount">
