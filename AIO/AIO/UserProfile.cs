@@ -15,6 +15,13 @@ namespace AIO
         public UserProfile()
         {
             InitializeComponent();
+
+            //this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Size.Width - 402, Screen.PrimaryScreen.WorkingArea.Size.Height - 73);
+
+            nickLabel.Text = Customer.Nick;
+            moneylabel.Text = Customer.Money;
+            
+
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)
@@ -40,7 +47,7 @@ namespace AIO
         {
             Form update = new ProfileUpdate();
             update.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void RemoveAccountBtn_Click(object sender, EventArgs e)
@@ -71,6 +78,11 @@ namespace AIO
         }
 
         private void nickLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Moneylabel_Click(object sender, EventArgs e)
         {
 
         }
