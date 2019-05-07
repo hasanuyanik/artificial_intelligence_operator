@@ -27,7 +27,6 @@ namespace AIO_Staff
             string password = passwordTextBox.Text;
             AccountWebService.accountPortTypeClient soap = new AccountWebService.accountPortTypeClient();
 
-
             string loginAction = soap.loginAccount(nick, password, authority);
 
             if (loginAction == "0")

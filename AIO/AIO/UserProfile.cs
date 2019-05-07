@@ -64,7 +64,6 @@ namespace AIO
             {
                 MessageBox.Show("delete filed!");
             }
-           
             else if (HesapSilme == "1")
             {
                 MessageBox.Show("delete succes!");
