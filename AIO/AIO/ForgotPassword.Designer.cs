@@ -140,7 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(706, 470);
+            this.ClientSize = new System.Drawing.Size(706, 506);
             this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.sendBtn);
             this.Controls.Add(this.mailTextBox);
@@ -149,6 +149,7 @@
             this.Controls.Add(this.mailLabel);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.middlelogo1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ForgotPassword";
             this.Text = "ForgotPassword";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
