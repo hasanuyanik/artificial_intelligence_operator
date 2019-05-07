@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:invoice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:invoice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:financial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:financial" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
-    <xsd:schema targetNamespace="urn:invoice">
+    <xsd:schema targetNamespace="urn:financial">
       <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
       <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
-      <xsd:complexType name="invoice">
+      <xsd:complexType name="financial">
         <xsd:all>
           <xsd:element name="id" type="xsd:string" />
           <xsd:element name="nick" type="xsd:string" />
@@ -13,9 +13,9 @@
           <xsd:element name="price" type="xsd:string" />
         </xsd:all>
       </xsd:complexType>
-      <xsd:complexType name="invoiceList">
+      <xsd:complexType name="financialList">
         <xsd:all>
-          <xsd:element minOccurs="0" maxOccurs="1" name="invoice" type="tns:invoice" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="financial" type="tns:financial" />
         </xsd:all>
       </xsd:complexType>
     </xsd:schema>
@@ -42,7 +42,7 @@
     <wsdl:part name="authority" type="xsd:string" />
   </wsdl:message>
   <wsdl:message name="getAllInvoiceListResponse">
-    <wsdl:part name="return" type="tns:invoiceList" />
+    <wsdl:part name="return" type="tns:financialList" />
   </wsdl:message>
   <wsdl:message name="getAllInvoiceListSplitRequest">
     <wsdl:part name="nick" type="xsd:string" />
@@ -52,7 +52,7 @@
   <wsdl:message name="getAllInvoiceListSplitResponse">
     <wsdl:part name="return" type="xsd:string" />
   </wsdl:message>
-  <wsdl:portType name="invoicePortType">
+  <wsdl:portType name="financialPortType">
     <wsdl:operation name="createInvoice">
       <documentation>Yeni fatura oluÅturma iÅlemi yapar.</documentation>
       <wsdl:input message="tns:createInvoiceRequest" />
@@ -74,48 +74,48 @@
       <wsdl:output message="tns:getAllInvoiceListSplitResponse" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="invoiceBinding" type="tns:invoicePortType">
+  <wsdl:binding name="financialBinding" type="tns:financialPortType">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
     <wsdl:operation name="createInvoice">
-      <soap:operation soapAction="urn:invoice#createInvoice" style="rpc" />
+      <soap:operation soapAction="urn:financial#createInvoice" style="rpc" />
       <wsdl:input>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
       <wsdl:output>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="payTheInvoice">
-      <soap:operation soapAction="urn:invoice#payTheInvoice" style="rpc" />
+      <soap:operation soapAction="urn:financial#payTheInvoice" style="rpc" />
       <wsdl:input>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
       <wsdl:output>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getAllInvoiceList">
-      <soap:operation soapAction="urn:invoice#getAllInvoiceList" style="rpc" />
+      <soap:operation soapAction="urn:financial#getAllInvoiceList" style="rpc" />
       <wsdl:input>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
       <wsdl:output>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="getAllInvoiceListSplit">
-      <soap:operation soapAction="urn:invoice#getAllInvoiceListSplit" style="rpc" />
+      <soap:operation soapAction="urn:financial#getAllInvoiceListSplit" style="rpc" />
       <wsdl:input>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>
       <wsdl:output>
-        <soap:body use="encoded" namespace="urn:invoice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+        <soap:body use="encoded" namespace="urn:financial" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="invoice">
-    <wsdl:port name="invoicePort" binding="tns:invoiceBinding">
-      <soap:address location="http://aio.gencutopia.com/ws/rpc/invoice/invoice.php" />
+  <wsdl:service name="financial">
+    <wsdl:port name="financialPort" binding="tns:financialBinding">
+      <soap:address location="http://aio.gencutopia.com/ws/rpc/financial/financial.php" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

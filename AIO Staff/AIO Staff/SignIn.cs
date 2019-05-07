@@ -51,6 +51,7 @@ namespace AIO_Staff
                 th.SetApartmentState(ApartmentState.STA);
                 th.Start();
                 this.Close();
+
             }
 
         }
@@ -62,7 +63,7 @@ namespace AIO_Staff
 
         private void openingUserProfile()
         {
-            Application.Run(new UserProfile());
+            Application.Run(new paymentlist());
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
