@@ -51,5 +51,10 @@ namespace AIO_Staff
         {
             Application.Run(new Index());
         }
+
+        private void nickLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

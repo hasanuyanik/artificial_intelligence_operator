@@ -59,6 +59,13 @@
   <wsdl:message name="logoutAccountResponse">
     <wsdl:part name="return" type="xsd:string" />
   </wsdl:message>
+  <wsdl:message name="updatedFetchSessionDataRequest">
+    <wsdl:part name="nick" type="xsd:string" />
+    <wsdl:part name="token" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="updatedFetchSessionDataResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
   <wsdl:message name="getAllAccountsRequest">
     <wsdl:part name="nick" type="xsd:string" />
   </wsdl:message>
@@ -97,6 +104,11 @@
       <documentation>Hesap Ã§Ä±kÄ±Å iÅlemi yapar.</documentation>
       <wsdl:input message="tns:logoutAccountRequest" />
       <wsdl:output message="tns:logoutAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updatedFetchSessionData">
+      <documentation>Tum hesaplari dondurur</documentation>
+      <wsdl:input message="tns:updatedFetchSessionDataRequest" />
+      <wsdl:output message="tns:updatedFetchSessionDataResponse" />
     </wsdl:operation>
     <wsdl:operation name="getAllAccounts">
       <documentation>Tum hesaplari dondurur</documentation>
@@ -149,6 +161,15 @@
     </wsdl:operation>
     <wsdl:operation name="logoutAccount">
       <soap:operation soapAction="urn:account#logoutAccount" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatedFetchSessionData">
+      <soap:operation soapAction="urn:account#updatedFetchSessionData" style="rpc" />
       <wsdl:input>
         <soap:body use="encoded" namespace="urn:account" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
       </wsdl:input>

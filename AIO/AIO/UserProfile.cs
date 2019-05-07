@@ -69,7 +69,6 @@ namespace AIO
 
 
             }
-           
             else if (HesapSilme == "1")
             {
                 MessageBox.Show("delete succes!");
