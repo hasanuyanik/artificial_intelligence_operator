@@ -58,6 +58,7 @@
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 1;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // selectInvoiceLabel
             // 
@@ -92,6 +93,7 @@
             this.payBtn.TabIndex = 4;
             this.payBtn.Text = "Pay";
             this.payBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.payBtn.Click += new System.EventHandler(this.payBtn_Click);
             // 
             // aioChatBtn
             // 
@@ -104,6 +106,7 @@
             this.aioChatBtn.TabIndex = 5;
             this.aioChatBtn.Text = "Aio Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioChatBtn.Click += new System.EventHandler(this.aioChatBtn_Click);
             // 
             // profileUpdateBtn
             // 
@@ -116,6 +119,7 @@
             this.profileUpdateBtn.TabIndex = 6;
             this.profileUpdateBtn.Text = "Profıle Update";
             this.profileUpdateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileUpdateBtn.Click += new System.EventHandler(this.profileUpdateBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -140,6 +144,7 @@
             this.profileBtn.TabIndex = 8;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // paymentlist
             // 
