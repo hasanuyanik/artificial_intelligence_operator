@@ -16,7 +16,7 @@ namespace AIO
         {
             InitializeComponent();
 
-            //this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Size.Width - 402, Screen.PrimaryScreen.WorkingArea.Size.Height - 73);
+            
 
             nickLabel.Text = Customer.Nick;
             moneylabel.Text = Customer.Money;
@@ -32,7 +32,9 @@ namespace AIO
 
         private void AioChatBtn_Click(object sender, EventArgs e)
         {
-            
+            CustomerChatPage chat = new CustomerChatPage();
+            chat.Show();
+            this.Hide();
         }
 
         private void PaymentListBtn_Click(object sender, EventArgs e)
@@ -63,10 +65,20 @@ namespace AIO
             if (HesapSilme == "0") 
             {
                 MessageBox.Show("delete filed!");
+
+
+
             }
             else if (HesapSilme == "1")
             {
                 MessageBox.Show("delete succes!");
+
+                Index iindex = new Index();
+                iindex.Show();
+                this.Hide();
+
+
+
             }
 
 
