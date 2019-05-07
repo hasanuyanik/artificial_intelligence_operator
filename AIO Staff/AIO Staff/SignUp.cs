@@ -25,7 +25,7 @@ namespace AIO_Staff
             string password = passwordTextBox.Text;
 
             AccountWebService.accountPortTypeClient YeniWebServis = new AccountWebService.accountPortTypeClient();
-            string HesapBilgi = YeniWebServis.createAccount(nick, mail, password, authority);
+            string HesapBilgi = YeniWebServis.createAccount(nick, password, mail, authority);
             if (HesapBilgi == "0")
             {
                 MessageBox.Show("Sign Up Failed!");
@@ -49,12 +49,12 @@ namespace AIO_Staff
 
         private void signInBtn_Click(object sender, EventArgs e)
         {
-           // SignIn form1 = new SignIn();//
-          //  form1.Close();//
-          //  Index f2 = new Index();//
-           // f2.Show();//
+            SignIn form1 = new SignIn();
+          form1.Close();
+           Index f2 = new Index();
+           f2.Show();
 
- //           this.Hide();//
+       this.Hide();
         }
     }
 }
