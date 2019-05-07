@@ -23,7 +23,7 @@ namespace AIO_Staff
             string password = passwordTextBox.Text;
             AccountWebService.accountPortTypeClient YeniWebServis = new AccountWebService.accountPortTypeClient();
 
-     //       string Update = YeniWebServis.updateAccount(password, authority, Financial.Token);
+            string Update = YeniWebServis.updateAccount(password, authority, Staff.Token);
             if (Update == "0")
             {
                 MessageBox.Show("Failed to update!");
@@ -48,8 +48,8 @@ namespace AIO_Staff
         {
             ProfileUpdate form1 = new ProfileUpdate();
             form1.Close();
-            CustomerChatPage f2 = new CustomerChatPage();
-            f2.Show();
+            //CustomerChatPage f2 = new CustomerChatPage();
+            //f2.Show();
 
             this.Hide();
         }
@@ -58,8 +58,8 @@ namespace AIO_Staff
         {
             ProfileUpdate eskiform = new ProfileUpdate();
             eskiform.Close();
-            PaymentList yeniform = new PaymentList();
-            yeniform.Show();
+            //PaymentList yeniform = new PaymentList();
+            //yeniform.Show();
 
             this.Hide();
         }
@@ -68,8 +68,8 @@ namespace AIO_Staff
         {
             ProfileUpdate eskiform1 = new ProfileUpdate();
             eskiform1.Close();
-            UserProfile yeniform1 = new UserProfile();
-            yeniform1.Show();
+            //UserProfile yeniform1 = new UserProfile();
+            //yeniform1.Show();
 
             this.Hide();
         }
