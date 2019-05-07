@@ -30,7 +30,7 @@
         {
             this.closeBtn = new System.Windows.Forms.Label();
             this.signInBtn = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.signUpBtn = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
@@ -59,19 +59,19 @@
             this.signInBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.signInBtn.Click += new System.EventHandler(this.signInBtn_Click);
             // 
-            // label1
+            // signUpBtn
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::AIO_Staff.Properties.Resources.bigBtn;
-            this.label1.Location = new System.Drawing.Point(389, 335);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 106);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sign Up";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.signUpBtn.BackColor = System.Drawing.Color.Transparent;
+            this.signUpBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.signUpBtn.ForeColor = System.Drawing.Color.White;
+            this.signUpBtn.Image = global::AIO_Staff.Properties.Resources.bigBtn;
+            this.signUpBtn.Location = new System.Drawing.Point(389, 335);
+            this.signUpBtn.Name = "signUpBtn";
+            this.signUpBtn.Size = new System.Drawing.Size(256, 106);
+            this.signUpBtn.TabIndex = 2;
+            this.signUpBtn.Text = "Sign Up";
+            this.signUpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signUpBtn.Click += new System.EventHandler(this.label1_Click);
             // 
             // logo
             // 
@@ -92,13 +92,12 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(706, 506);
             this.Controls.Add(this.logo);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.signUpBtn);
             this.Controls.Add(this.signInBtn);
             this.Controls.Add(this.closeBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Index";
             this.Text = "Index";
-            
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
@@ -108,7 +107,7 @@
 
         private System.Windows.Forms.Label closeBtn;
         private System.Windows.Forms.Label signInBtn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label signUpBtn;
         private System.Windows.Forms.PictureBox logo;
     }
 }
