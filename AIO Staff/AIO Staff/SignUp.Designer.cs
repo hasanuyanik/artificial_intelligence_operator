@@ -95,7 +95,11 @@
             // 
             this.nickTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nickTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+<<<<<<< HEAD
+            this.nickTextBox.Location = new System.Drawing.Point(414, 129);
+=======
             this.nickTextBox.Location = new System.Drawing.Point(412, 126);
+>>>>>>> 9f97d092d3074c574a884a0f0168762ac0d96c2e
             this.nickTextBox.Multiline = true;
             this.nickTextBox.Name = "nickTextBox";
             this.nickTextBox.Size = new System.Drawing.Size(251, 30);
@@ -127,7 +131,11 @@
             // 
             this.mailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+<<<<<<< HEAD
+            this.mailTextBox.Location = new System.Drawing.Point(414, 216);
+=======
             this.mailTextBox.Location = new System.Drawing.Point(415, 215);
+>>>>>>> 9f97d092d3074c574a884a0f0168762ac0d96c2e
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
             this.mailTextBox.Size = new System.Drawing.Size(251, 30);
@@ -159,7 +167,11 @@
             // 
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+<<<<<<< HEAD
+            this.passwordTextBox.Location = new System.Drawing.Point(414, 289);
+=======
             this.passwordTextBox.Location = new System.Drawing.Point(413, 289);
+>>>>>>> 9f97d092d3074c574a884a0f0168762ac0d96c2e
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '●';
