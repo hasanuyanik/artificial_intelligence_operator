@@ -57,6 +57,7 @@ namespace AIO
         private void openingForgotPassword()
         {
             //Application.Run(new ForgotPassword());
+            //Yusuf TURHAN
         }
 
         private void signInBtn_Click(object sender, EventArgs e)
