@@ -52,9 +52,27 @@ namespace AIO
 
         private void RemoveAccountBtn_Click(object sender, EventArgs e)
         {
+           // string token = AppAuthority.Authority;
+           // string authority = AppAuthority.Authority;
+            
+
             AccountWebService.accountPortTypeClient servisaccount = new AccountWebService.accountPortTypeClient();
 
-            
+            string HesapSilme = servisaccount.deleteAccount(Customer.Token, AppAuthority.Authority);
+
+            if (HesapSilme == "1") 
+            {
+                MessageBox.Show("delete sucses!");
+            }
+           
+            else if (HesapSilme == "0")
+            {
+                MessageBox.Show("delete filed!");
+            }
+
+
+
+
 
 
 
