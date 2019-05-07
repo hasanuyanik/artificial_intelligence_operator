@@ -36,30 +36,30 @@ namespace AIO_Staff
 
         private void label2_Click(object sender, EventArgs e)
         {
-      //      ProfileUpdate f1 = new ProfileUpdate();
-        //    f1.Close();
-          //  UserProfile f2 = new UserProfile();
-            //f2.Show();
+          ProfileUpdate f1 = new ProfileUpdate();
+            f1.Close();
+           UserProfile f2 = new UserProfile();
+           f2.Show();
 
-         //   this.Hide();
+            this.Hide();
         }
 
         private void aioChatBtn_Click(object sender, EventArgs e)
         {
             ProfileUpdate form1 = new ProfileUpdate();
             form1.Close();
-            //CustomerChatPage f2 = new CustomerChatPage();
-            //f2.Show();
+            StaffChatPage f2 = new StaffChatPage();
+            f2.Show();
 
             this.Hide();
         }
 
         private void paymentListBtn_Click(object sender, EventArgs e)
         {
-            ProfileUpdate eskiform = new ProfileUpdate();
-            eskiform.Close();
-            //PaymentList yeniform = new PaymentList();
-            //yeniform.Show();
+          //  ProfileUpdate eskiform = new ProfileUpdate();
+            //eskiform.Close();
+          // PaymentList yeniform = new PaymentList();
+          // yeniform.Show();
 
             this.Hide();
         }
@@ -72,6 +72,11 @@ namespace AIO_Staff
             //yeniform1.Show();
 
             this.Hide();
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
