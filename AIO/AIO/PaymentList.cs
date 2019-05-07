@@ -21,8 +21,7 @@ namespace AIO
         string curItem;
         private void PaymentList_Load(object sender, EventArgs e)
         {
-            
-
+  
             FinancialWebService.financialPortTypeClient serviceSoap = new FinancialWebService.financialPortTypeClient();
             string[] financialList = serviceSoap.getAllInvoiceListSplit(Customer.Nick, Customer.Token, AppAuthority.Authority).Split('|');
             for (int i = 0; i < financialList.Length; i++)
@@ -89,6 +88,13 @@ namespace AIO
                selectInvolceListbox.SelectedIndex = 0;
               
             
+        }
+
+        private void aioChatBtn_Click(object sender, EventArgs e)
+        {
+            CustomerChatPage aiochat = new CustomerChatPage();
+            aiochat.Show();
+            this.Hide();
         }
     }
 }
