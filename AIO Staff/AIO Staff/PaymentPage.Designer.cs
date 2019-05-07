@@ -45,7 +45,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 157);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 193);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 203);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -58,9 +59,10 @@
             this.payBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.payBtn.ForeColor = System.Drawing.Color.White;
             this.payBtn.Image = ((System.Drawing.Image)(resources.GetObject("payBtn.Image")));
-            this.payBtn.Location = new System.Drawing.Point(522, 327);
+            this.payBtn.Location = new System.Drawing.Point(696, 402);
+            this.payBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.payBtn.Name = "payBtn";
-            this.payBtn.Size = new System.Drawing.Size(154, 50);
+            this.payBtn.Size = new System.Drawing.Size(205, 62);
             this.payBtn.TabIndex = 17;
             this.payBtn.Text = "Pay";
             this.payBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -69,10 +71,11 @@
             // 
             this.invoiceInformationListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.invoiceInformationListBox.FormattingEnabled = true;
-            this.invoiceInformationListBox.ItemHeight = 18;
-            this.invoiceInformationListBox.Location = new System.Drawing.Point(289, 113);
+            this.invoiceInformationListBox.ItemHeight = 24;
+            this.invoiceInformationListBox.Location = new System.Drawing.Point(385, 139);
+            this.invoiceInformationListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.invoiceInformationListBox.Name = "invoiceInformationListBox";
-            this.invoiceInformationListBox.Size = new System.Drawing.Size(387, 184);
+            this.invoiceInformationListBox.Size = new System.Drawing.Size(515, 220);
             this.invoiceInformationListBox.TabIndex = 10;
             // 
             // invoiceInformationLabel
@@ -80,9 +83,10 @@
             this.invoiceInformationLabel.BackColor = System.Drawing.Color.Transparent;
             this.invoiceInformationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.invoiceInformationLabel.ForeColor = System.Drawing.Color.White;
-            this.invoiceInformationLabel.Location = new System.Drawing.Point(286, 87);
+            this.invoiceInformationLabel.Location = new System.Drawing.Point(381, 107);
+            this.invoiceInformationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.invoiceInformationLabel.Name = "invoiceInformationLabel";
-            this.invoiceInformationLabel.Size = new System.Drawing.Size(154, 23);
+            this.invoiceInformationLabel.Size = new System.Drawing.Size(205, 28);
             this.invoiceInformationLabel.TabIndex = 11;
             this.invoiceInformationLabel.Text = "Invoice Information";
             // 
@@ -92,12 +96,14 @@
             this.aioChatBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.aioChatBtn.ForeColor = System.Drawing.Color.White;
             this.aioChatBtn.Image = ((System.Drawing.Image)(resources.GetObject("aioChatBtn.Image")));
-            this.aioChatBtn.Location = new System.Drawing.Point(16, 433);
+            this.aioChatBtn.Location = new System.Drawing.Point(21, 533);
+            this.aioChatBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.aioChatBtn.Name = "aioChatBtn";
-            this.aioChatBtn.Size = new System.Drawing.Size(104, 50);
+            this.aioChatBtn.Size = new System.Drawing.Size(139, 62);
             this.aioChatBtn.TabIndex = 13;
             this.aioChatBtn.Text = "AIO Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioChatBtn.Click += new System.EventHandler(this.aioChatBtn_Click);
             // 
             // profileUpdateBtn
             // 
@@ -105,12 +111,14 @@
             this.profileUpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.profileUpdateBtn.ForeColor = System.Drawing.Color.White;
             this.profileUpdateBtn.Image = ((System.Drawing.Image)(resources.GetObject("profileUpdateBtn.Image")));
-            this.profileUpdateBtn.Location = new System.Drawing.Point(126, 433);
+            this.profileUpdateBtn.Location = new System.Drawing.Point(168, 533);
+            this.profileUpdateBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.profileUpdateBtn.Name = "profileUpdateBtn";
-            this.profileUpdateBtn.Size = new System.Drawing.Size(154, 50);
+            this.profileUpdateBtn.Size = new System.Drawing.Size(205, 62);
             this.profileUpdateBtn.TabIndex = 14;
             this.profileUpdateBtn.Text = "Profile Update";
             this.profileUpdateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileUpdateBtn.Click += new System.EventHandler(this.profileUpdateBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -118,12 +126,14 @@
             this.paymentListBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.paymentListBtn.ForeColor = System.Drawing.Color.White;
             this.paymentListBtn.Image = ((System.Drawing.Image)(resources.GetObject("paymentListBtn.Image")));
-            this.paymentListBtn.Location = new System.Drawing.Point(286, 433);
+            this.paymentListBtn.Location = new System.Drawing.Point(381, 533);
+            this.paymentListBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.paymentListBtn.Name = "paymentListBtn";
-            this.paymentListBtn.Size = new System.Drawing.Size(154, 50);
+            this.paymentListBtn.Size = new System.Drawing.Size(205, 62);
             this.paymentListBtn.TabIndex = 15;
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // profileBtn
             // 
@@ -131,28 +141,31 @@
             this.profileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.profileBtn.ForeColor = System.Drawing.Color.White;
             this.profileBtn.Image = ((System.Drawing.Image)(resources.GetObject("profileBtn.Image")));
-            this.profileBtn.Location = new System.Drawing.Point(446, 433);
+            this.profileBtn.Location = new System.Drawing.Point(595, 533);
+            this.profileBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.profileBtn.Name = "profileBtn";
-            this.profileBtn.Size = new System.Drawing.Size(104, 50);
+            this.profileBtn.Size = new System.Drawing.Size(139, 62);
             this.profileBtn.TabIndex = 16;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(648, 9);
+            this.label1.Location = new System.Drawing.Point(864, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 36);
+            this.label1.Size = new System.Drawing.Size(48, 44);
             this.label1.TabIndex = 1;
             // 
             // PaymentPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AIO_Staff.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(706, 506);
+            this.ClientSize = new System.Drawing.Size(941, 623);
             this.Controls.Add(this.payBtn);
             this.Controls.Add(this.profileBtn);
             this.Controls.Add(this.paymentListBtn);
@@ -163,6 +176,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PaymentPage";
             this.Text = "PaymentPage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
