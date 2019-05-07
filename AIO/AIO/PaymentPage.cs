@@ -26,9 +26,9 @@ namespace AIO
 
         private void aioChatBtn_Click(object sender, EventArgs e)
         {
-            //AIOChat aiochat = new AIOChat();
-            //aiochat.show();
-            //this.Hide();
+            CustomerChatPage aiochat = new CustomerChatPage();
+            aiochat.Show();
+            this.Hide();
         }
 
         private void profileUpdateBtn_Click(object sender, EventArgs e)
