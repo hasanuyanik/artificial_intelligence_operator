@@ -70,9 +70,11 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 36);
             this.label2.TabIndex = 2;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::AIO_Staff.Properties.Resources.textbox2;
             this.pictureBox1.Location = new System.Drawing.Point(410, 227);
@@ -87,7 +89,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(422, 237);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(224, 20);
             this.passwordTextBox.TabIndex = 4;
             // 
             // saveBtn
@@ -116,6 +118,7 @@
             this.aioChatBtn.TabIndex = 6;
             this.aioChatBtn.Text = "AIO Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioChatBtn.Click += new System.EventHandler(this.aioChatBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -129,6 +132,7 @@
             this.paymentListBtn.TabIndex = 7;
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // profileBtn
             // 
@@ -142,6 +146,7 @@
             this.profileBtn.TabIndex = 8;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // ProfileUpdate
             // 
