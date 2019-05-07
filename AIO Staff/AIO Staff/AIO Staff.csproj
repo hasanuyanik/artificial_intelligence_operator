@@ -171,7 +171,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\AccountWebService\index.wsdl" />
-    <None Include="Connected Services\FinancialWebService\AIO_Staff.FinancialWebService.invoiceList.datasource">
+    <None Include="Connected Services\FinancialWebService\AIO_Staff.FinancialWebService.financialList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\FinancialWebService\index.wsdl" />
