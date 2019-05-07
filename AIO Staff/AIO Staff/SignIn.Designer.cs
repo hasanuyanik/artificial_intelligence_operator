@@ -106,7 +106,7 @@
             this.nickTextBox.Name = "nickTextBox";
             this.nickTextBox.Size = new System.Drawing.Size(251, 30);
             this.nickTextBox.TabIndex = 28;
-            this.nickTextBox.Text = "AdminAIO";
+            this.nickTextBox.Text = "Hasan";
             // 
             // passwordLabel
             // 
