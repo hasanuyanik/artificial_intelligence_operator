@@ -38,7 +38,7 @@ namespace AIO
             string password = passwordTextBox.Text;
             AccountWebService.accountPortTypeClient YeniWebServis = new AccountWebService.accountPortTypeClient();
 
-            string Update = YeniWebServis.updateAccount(password, authority, Customer.Token);
+            string Update = YeniWebServis.updateAccount(password,Customer.Token,authority);
             if (Update == "0")
             {
                 MessageBox.Show("Failed to update!");
