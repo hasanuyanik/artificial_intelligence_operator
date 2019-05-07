@@ -73,11 +73,11 @@
             // 
             this.nickLabel.AutoSize = true;
             this.nickLabel.BackColor = System.Drawing.Color.Transparent;
-            this.nickLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nickLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.nickLabel.ForeColor = System.Drawing.Color.White;
             this.nickLabel.Location = new System.Drawing.Point(403, 94);
             this.nickLabel.Name = "nickLabel";
-            this.nickLabel.Size = new System.Drawing.Size(51, 24);
+            this.nickLabel.Size = new System.Drawing.Size(39, 18);
             this.nickLabel.TabIndex = 2;
             this.nickLabel.Text = "Nick";
             // 
@@ -87,28 +87,29 @@
             this.pictureBox1.Image = global::AIO_Staff.Properties.Resources.textbox3;
             this.pictureBox1.Location = new System.Drawing.Point(407, 121);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 44);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // nickTextBox
             // 
             this.nickTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nickTextBox.Location = new System.Drawing.Point(419, 132);
+            this.nickTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.nickTextBox.Location = new System.Drawing.Point(414, 129);
             this.nickTextBox.Multiline = true;
             this.nickTextBox.Name = "nickTextBox";
-            this.nickTextBox.Size = new System.Drawing.Size(229, 20);
+            this.nickTextBox.Size = new System.Drawing.Size(251, 30);
             this.nickTextBox.TabIndex = 4;
             // 
             // mailLabel
             // 
             this.mailLabel.AutoSize = true;
             this.mailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.mailLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mailLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.mailLabel.ForeColor = System.Drawing.Color.White;
             this.mailLabel.Location = new System.Drawing.Point(403, 181);
             this.mailLabel.Name = "mailLabel";
-            this.mailLabel.Size = new System.Drawing.Size(48, 24);
+            this.mailLabel.Size = new System.Drawing.Size(37, 18);
             this.mailLabel.TabIndex = 5;
             this.mailLabel.Text = "Mail";
             // 
@@ -118,28 +119,29 @@
             this.pictureBox2.Image = global::AIO_Staff.Properties.Resources.textbox4;
             this.pictureBox2.Location = new System.Drawing.Point(407, 208);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(263, 42);
+            this.pictureBox2.Size = new System.Drawing.Size(263, 44);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
             // mailTextBox
             // 
             this.mailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mailTextBox.Location = new System.Drawing.Point(419, 217);
+            this.mailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mailTextBox.Location = new System.Drawing.Point(414, 216);
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
-            this.mailTextBox.Size = new System.Drawing.Size(229, 20);
+            this.mailTextBox.Size = new System.Drawing.Size(251, 30);
             this.mailTextBox.TabIndex = 7;
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
             this.passwordLabel.Location = new System.Drawing.Point(403, 262);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(103, 24);
+            this.passwordLabel.Size = new System.Drawing.Size(77, 18);
             this.passwordLabel.TabIndex = 8;
             this.passwordLabel.Text = "Password";
             // 
@@ -149,23 +151,25 @@
             this.pictureBox3.Image = global::AIO_Staff.Properties.Resources.textbox5;
             this.pictureBox3.Location = new System.Drawing.Point(407, 284);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(263, 42);
+            this.pictureBox3.Size = new System.Drawing.Size(263, 44);
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextBox.Location = new System.Drawing.Point(419, 289);
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordTextBox.Location = new System.Drawing.Point(414, 289);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(229, 20);
+            this.passwordTextBox.PasswordChar = '●';
+            this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
             this.passwordTextBox.TabIndex = 10;
             // 
             // signUpBtn
             // 
             this.signUpBtn.BackColor = System.Drawing.Color.Transparent;
-            this.signUpBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.signUpBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.signUpBtn.ForeColor = System.Drawing.Color.White;
             this.signUpBtn.Image = global::AIO_Staff.Properties.Resources.bigBtn1;
             this.signUpBtn.Location = new System.Drawing.Point(404, 351);
@@ -179,7 +183,7 @@
             // signInBtn
             // 
             this.signInBtn.BackColor = System.Drawing.Color.Transparent;
-            this.signInBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.signInBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.signInBtn.ForeColor = System.Drawing.Color.White;
             this.signInBtn.Image = global::AIO_Staff.Properties.Resources.btn32;
             this.signInBtn.Location = new System.Drawing.Point(12, 447);

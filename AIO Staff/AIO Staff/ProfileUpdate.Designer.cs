@@ -30,7 +30,7 @@
         {
             this.middlelogo = new System.Windows.Forms.PictureBox();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.closeBtn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Label();
@@ -54,23 +54,23 @@
             // passwordLabel
             // 
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
-            this.passwordLabel.Location = new System.Drawing.Point(397, 189);
+            this.passwordLabel.Location = new System.Drawing.Point(407, 186);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(113, 23);
             this.passwordLabel.TabIndex = 1;
             this.passwordLabel.Text = "Password";
             // 
-            // label2
+            // closeBtn
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Image = global::AIO_Staff.Properties.Resources.closeBtn1;
-            this.label2.Location = new System.Drawing.Point(658, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 36);
-            this.label2.TabIndex = 2;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.closeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.closeBtn.Image = global::AIO_Staff.Properties.Resources.closeBtn1;
+            this.closeBtn.Location = new System.Drawing.Point(658, 9);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(36, 36);
+            this.closeBtn.TabIndex = 2;
+            this.closeBtn.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -79,26 +79,28 @@
             this.pictureBox1.Image = global::AIO_Staff.Properties.Resources.textbox2;
             this.pictureBox1.Location = new System.Drawing.Point(410, 227);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 43);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 44);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextBox.Location = new System.Drawing.Point(422, 237);
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.passwordTextBox.Location = new System.Drawing.Point(415, 235);
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(224, 20);
+            this.passwordTextBox.PasswordChar = '●';
+            this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
             this.passwordTextBox.TabIndex = 4;
             // 
             // saveBtn
             // 
             this.saveBtn.BackColor = System.Drawing.Color.Transparent;
-            this.saveBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.saveBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.saveBtn.ForeColor = System.Drawing.Color.White;
             this.saveBtn.Image = global::AIO_Staff.Properties.Resources.middleBtn;
-            this.saveBtn.Location = new System.Drawing.Point(402, 293);
+            this.saveBtn.Location = new System.Drawing.Point(409, 293);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(257, 62);
             this.saveBtn.TabIndex = 5;
@@ -109,10 +111,10 @@
             // aioChatBtn
             // 
             this.aioChatBtn.BackColor = System.Drawing.Color.Transparent;
-            this.aioChatBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.aioChatBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.aioChatBtn.ForeColor = System.Drawing.Color.White;
             this.aioChatBtn.Image = global::AIO_Staff.Properties.Resources.btn3;
-            this.aioChatBtn.Location = new System.Drawing.Point(80, 410);
+            this.aioChatBtn.Location = new System.Drawing.Point(12, 432);
             this.aioChatBtn.Name = "aioChatBtn";
             this.aioChatBtn.Size = new System.Drawing.Size(104, 50);
             this.aioChatBtn.TabIndex = 6;
@@ -123,10 +125,10 @@
             // paymentListBtn
             // 
             this.paymentListBtn.BackColor = System.Drawing.Color.Transparent;
-            this.paymentListBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.paymentListBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.paymentListBtn.ForeColor = System.Drawing.Color.White;
             this.paymentListBtn.Image = global::AIO_Staff.Properties.Resources.btn2;
-            this.paymentListBtn.Location = new System.Drawing.Point(190, 410);
+            this.paymentListBtn.Location = new System.Drawing.Point(122, 432);
             this.paymentListBtn.Name = "paymentListBtn";
             this.paymentListBtn.Size = new System.Drawing.Size(154, 50);
             this.paymentListBtn.TabIndex = 7;
@@ -137,10 +139,10 @@
             // profileBtn
             // 
             this.profileBtn.BackColor = System.Drawing.Color.Transparent;
-            this.profileBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.profileBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.profileBtn.ForeColor = System.Drawing.Color.White;
             this.profileBtn.Image = global::AIO_Staff.Properties.Resources.btn31;
-            this.profileBtn.Location = new System.Drawing.Point(350, 410);
+            this.profileBtn.Location = new System.Drawing.Point(282, 432);
             this.profileBtn.Name = "profileBtn";
             this.profileBtn.Size = new System.Drawing.Size(104, 50);
             this.profileBtn.TabIndex = 8;
@@ -160,7 +162,7 @@
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.middlelogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -178,7 +180,7 @@
 
         private System.Windows.Forms.PictureBox middlelogo;
         private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label closeBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label saveBtn;
