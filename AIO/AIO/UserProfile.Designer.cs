@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label moneyLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserProfile));
+            this.moneylabel = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -38,24 +38,24 @@
             this.profileUpdateBtn = new System.Windows.Forms.Label();
             this.paymentListBtn = new System.Windows.Forms.Label();
             this.removeAccountBtn = new System.Windows.Forms.Label();
-            moneyLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // moneyLabel
+            // moneylabel
             // 
-            moneyLabel.BackColor = System.Drawing.Color.Transparent;
-            moneyLabel.Font = new System.Drawing.Font("Arial", 70F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
-            moneyLabel.ForeColor = System.Drawing.SystemColors.Control;
-            moneyLabel.Image = ((System.Drawing.Image)(resources.GetObject("moneyLabel.Image")));
-            moneyLabel.Location = new System.Drawing.Point(269, 195);
-            moneyLabel.Name = "moneyLabel";
-            moneyLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            moneyLabel.Size = new System.Drawing.Size(367, 169);
-            moneyLabel.TabIndex = 4;
-            moneyLabel.Text = "5000";
-            moneyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.moneylabel.BackColor = System.Drawing.Color.Transparent;
+            this.moneylabel.Font = new System.Drawing.Font("Arial", 70F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
+            this.moneylabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.moneylabel.Image = ((System.Drawing.Image)(resources.GetObject("moneylabel.Image")));
+            this.moneylabel.Location = new System.Drawing.Point(269, 195);
+            this.moneylabel.Name = "moneylabel";
+            this.moneylabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.moneylabel.Size = new System.Drawing.Size(367, 169);
+            this.moneylabel.TabIndex = 4;
+            this.moneylabel.Text = "5000";
+            this.moneylabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.moneylabel.Click += new System.EventHandler(this.Moneylabel_Click);
             // 
             // logo
             // 
@@ -166,7 +166,7 @@
             this.Controls.Add(this.paymentListBtn);
             this.Controls.Add(this.profileUpdateBtn);
             this.Controls.Add(this.aioChatBtn);
-            this.Controls.Add(moneyLabel);
+            this.Controls.Add(this.moneylabel);
             this.Controls.Add(this.nickLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.closeBtn);
@@ -192,5 +192,6 @@
         private System.Windows.Forms.Label profileUpdateBtn;
         private System.Windows.Forms.Label paymentListBtn;
         private System.Windows.Forms.Label removeAccountBtn;
+        private System.Windows.Forms.Label moneylabel;
     }
 }
