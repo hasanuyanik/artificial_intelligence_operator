@@ -163,6 +163,16 @@ namespace AIO_Staff.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn22 {
+            get {
+                object obj = ResourceManager.GetObject("btn22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn3 {
             get {
                 object obj = ResourceManager.GetObject("btn3", resourceCulture);
@@ -186,6 +196,26 @@ namespace AIO_Staff.Properties {
         internal static System.Drawing.Bitmap btn32 {
             get {
                 object obj = ResourceManager.GetObject("btn32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn33 {
+            get {
+                object obj = ResourceManager.GetObject("btn33", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn34 {
+            get {
+                object obj = ResourceManager.GetObject("btn34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +306,16 @@ namespace AIO_Staff.Properties {
         internal static System.Drawing.Bitmap middleBtn1 {
             get {
                 object obj = ResourceManager.GetObject("middleBtn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap middleBtn2 {
+            get {
+                object obj = ResourceManager.GetObject("middleBtn2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
