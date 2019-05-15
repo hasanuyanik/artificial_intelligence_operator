@@ -64,6 +64,7 @@
             this.payBtn.TabIndex = 17;
             this.payBtn.Text = "Pay";
             this.payBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.payBtn.Click += new System.EventHandler(this.payBtn_Click);
             // 
             // invoiceInformationListBox
             // 
@@ -72,7 +73,7 @@
             this.invoiceInformationListBox.ItemHeight = 18;
             this.invoiceInformationListBox.Location = new System.Drawing.Point(289, 113);
             this.invoiceInformationListBox.Name = "invoiceInformationListBox";
-            this.invoiceInformationListBox.Size = new System.Drawing.Size(387, 184);
+            this.invoiceInformationListBox.Size = new System.Drawing.Size(387, 166);
             this.invoiceInformationListBox.TabIndex = 10;
             // 
             // invoiceInformationLabel
@@ -98,6 +99,7 @@
             this.aioChatBtn.TabIndex = 13;
             this.aioChatBtn.Text = "AIO Chat";
             this.aioChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aioChatBtn.Click += new System.EventHandler(this.aioChatBtn_Click);
             // 
             // profileUpdateBtn
             // 
@@ -111,6 +113,7 @@
             this.profileUpdateBtn.TabIndex = 14;
             this.profileUpdateBtn.Text = "Profile Update";
             this.profileUpdateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileUpdateBtn.Click += new System.EventHandler(this.profileUpdateBtn_Click);
             // 
             // paymentListBtn
             // 
@@ -124,6 +127,7 @@
             this.paymentListBtn.TabIndex = 15;
             this.paymentListBtn.Text = "Payment List";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // profileBtn
             // 
@@ -137,6 +141,7 @@
             this.profileBtn.TabIndex = 16;
             this.profileBtn.Text = "Profile";
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
             // label1
             // 
@@ -146,6 +151,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 36);
             this.label1.TabIndex = 1;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // PaymentPage
             // 
@@ -165,6 +171,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PaymentPage";
             this.Text = "PaymentPage";
+            this.Load += new System.EventHandler(this.PaymentPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

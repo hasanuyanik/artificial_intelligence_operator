@@ -29,22 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSessionScreen));
-            this.moneyLabel = new System.Windows.Forms.Label();
             this.logoutBtn = new System.Windows.Forms.Label();
             this.nickLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // moneyLabel
-            // 
-            this.moneyLabel.AutoSize = true;
-            this.moneyLabel.BackColor = System.Drawing.Color.Transparent;
-            this.moneyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.moneyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.moneyLabel.Location = new System.Drawing.Point(17, 44);
-            this.moneyLabel.Name = "moneyLabel";
-            this.moneyLabel.Size = new System.Drawing.Size(77, 17);
-            this.moneyLabel.TabIndex = 5;
-            this.moneyLabel.Text = "AIO Money";
             // 
             // logoutBtn
             // 
@@ -71,6 +58,7 @@
             this.nickLabel.Size = new System.Drawing.Size(51, 23);
             this.nickLabel.TabIndex = 3;
             this.nickLabel.Text = "User";
+            this.nickLabel.Click += new System.EventHandler(this.nickLabel_Click);
             // 
             // UserSessionScreen
             // 
@@ -78,7 +66,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AIO_Staff.Properties.Resources.bg4;
             this.ClientSize = new System.Drawing.Size(402, 73);
-            this.Controls.Add(this.moneyLabel);
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.nickLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -91,8 +78,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label moneyLabel;
         private System.Windows.Forms.Label logoutBtn;
         private System.Windows.Forms.Label nickLabel;
     }

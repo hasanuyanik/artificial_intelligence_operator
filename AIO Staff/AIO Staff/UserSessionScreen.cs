@@ -25,6 +25,8 @@ namespace AIO_Staff
 
         private void UserSessionScreen_Load(object sender, EventArgs e)
         {
+            this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Size.Width - 402, Screen.PrimaryScreen.WorkingArea.Size.Height - 73);
+
 
         }
 
@@ -50,6 +52,11 @@ namespace AIO_Staff
         private void openingIndex()
         {
             Application.Run(new Index());
+        }
+
+        private void nickLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

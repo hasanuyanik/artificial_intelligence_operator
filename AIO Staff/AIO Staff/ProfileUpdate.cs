@@ -17,13 +17,13 @@ namespace AIO_Staff
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void saveBtn_Click(object sender, EventArgs e)
         {
             string authority = AppAuthority.Authority;
             string password = passwordTextBox.Text;
             AccountWebService.accountPortTypeClient YeniWebServis = new AccountWebService.accountPortTypeClient();
 
-            string Update = YeniWebServis.updateAccount(password, authority, Staff.Token);
+            string Update = YeniWebServis.updateAccount(password, Staff.Token, authority);
             if (Update == "0")
             {
                 MessageBox.Show("Failed to update!");
@@ -34,22 +34,12 @@ namespace AIO_Staff
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-      //      ProfileUpdate f1 = new ProfileUpdate();
-        //    f1.Close();
-          //  UserProfile f2 = new UserProfile();
-            //f2.Show();
-
-         //   this.Hide();
-        }
-
         private void aioChatBtn_Click(object sender, EventArgs e)
         {
             ProfileUpdate form1 = new ProfileUpdate();
             form1.Close();
-            //CustomerChatPage f2 = new CustomerChatPage();
-            //f2.Show();
+            StaffChatPage f2 = new StaffChatPage();
+            f2.Show();
 
             this.Hide();
         }
@@ -58,8 +48,8 @@ namespace AIO_Staff
         {
             ProfileUpdate eskiform = new ProfileUpdate();
             eskiform.Close();
-            //PaymentList yeniform = new PaymentList();
-            //yeniform.Show();
+           paymentlist yeniform = new paymentlist();
+            yeniform.Show();
 
             this.Hide();
         }
@@ -68,8 +58,8 @@ namespace AIO_Staff
         {
             ProfileUpdate eskiform1 = new ProfileUpdate();
             eskiform1.Close();
-            //UserProfile yeniform1 = new UserProfile();
-            //yeniform1.Show();
+            UserProfile yeniform1 = new UserProfile();
+            yeniform1.Show();
 
             this.Hide();
         }

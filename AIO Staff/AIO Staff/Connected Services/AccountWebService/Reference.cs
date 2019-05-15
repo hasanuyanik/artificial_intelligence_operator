@@ -60,6 +60,15 @@ namespace AIO_Staff.AccountWebService {
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         System.Threading.Tasks.Task<string> logoutAccountAsync(string nick, string token, string authority);
         
+        [System.ServiceModel.OperationContractAttribute(Action="urn:account#updatedFetchSessionData", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        string updatedFetchSessionData(string nick, string token);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:account#updatedFetchSessionData", ReplyAction="*")]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        System.Threading.Tasks.Task<string> updatedFetchSessionDataAsync(string nick, string token);
+        
         [System.ServiceModel.OperationContractAttribute(Action="urn:account#getAllAccounts", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -245,6 +254,14 @@ namespace AIO_Staff.AccountWebService {
         
         public System.Threading.Tasks.Task<string> logoutAccountAsync(string nick, string token, string authority) {
             return base.Channel.logoutAccountAsync(nick, token, authority);
+        }
+        
+        public string updatedFetchSessionData(string nick, string token) {
+            return base.Channel.updatedFetchSessionData(nick, token);
+        }
+        
+        public System.Threading.Tasks.Task<string> updatedFetchSessionDataAsync(string nick, string token) {
+            return base.Channel.updatedFetchSessionDataAsync(nick, token);
         }
         
         public AIO_Staff.AccountWebService.accountList getAllAccounts(string nick) {

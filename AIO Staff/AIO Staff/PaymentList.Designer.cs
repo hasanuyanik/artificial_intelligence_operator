@@ -81,6 +81,7 @@
             this.selectInvoiceListbox.Name = "selectInvoiceListbox";
             this.selectInvoiceListbox.Size = new System.Drawing.Size(384, 220);
             this.selectInvoiceListbox.TabIndex = 3;
+            this.selectInvoiceListbox.SelectedIndexChanged += new System.EventHandler(this.selectInvoiceListbox_SelectedIndexChanged);
             // 
             // payBtn
             // 
@@ -132,6 +133,7 @@
             this.paymentListBtn.TabIndex = 7;
             this.paymentListBtn.Text = "Payment List ";
             this.paymentListBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.paymentListBtn.Click += new System.EventHandler(this.paymentListBtn_Click);
             // 
             // profileBtn
             // 

@@ -27,7 +27,6 @@ namespace AIO_Staff
             string password = passwordTextBox.Text;
             AccountWebService.accountPortTypeClient soap = new AccountWebService.accountPortTypeClient();
 
-
             string loginAction = soap.loginAccount(nick, password, authority);
 
             if (loginAction == "0")
@@ -63,7 +62,7 @@ namespace AIO_Staff
 
         private void openingUserProfile()
         {
-            //Application.Run(new UserProfile());
+            Application.Run(new UserProfile());
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
