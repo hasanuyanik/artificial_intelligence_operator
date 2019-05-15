@@ -83,7 +83,7 @@
             this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sendBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.sendBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.sendBtn.Location = new System.Drawing.Point(417, 244);
+            this.sendBtn.Location = new System.Drawing.Point(418, 240);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(257, 62);
             this.sendBtn.TabIndex = 35;
@@ -129,7 +129,7 @@
             // 
             this.middlelogo1.BackColor = System.Drawing.Color.Transparent;
             this.middlelogo1.Image = global::AIO.Properties.Resources.middleLogo2;
-            this.middlelogo1.Location = new System.Drawing.Point(59, 141);
+            this.middlelogo1.Location = new System.Drawing.Point(61, 141);
             this.middlelogo1.Name = "middlelogo1";
             this.middlelogo1.Size = new System.Drawing.Size(175, 203);
             this.middlelogo1.TabIndex = 29;
