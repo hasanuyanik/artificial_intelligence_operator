@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace AIO_Staff
 {
     public partial class ProfileUpdate : Form
     {
+        Thread th;
         public ProfileUpdate()
         {
             InitializeComponent();
@@ -62,6 +64,19 @@ namespace AIO_Staff
             yeniform1.Show();
 
             this.Hide();
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            th = new Thread(openingUserProfile);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+            this.Close();
+        }
+
+        private void openingUserProfile()
+        {
+            Application.Run(new UserProfile());
         }
     }
 }

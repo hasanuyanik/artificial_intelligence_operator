@@ -36,6 +36,7 @@
             this.aioChatBtn = new System.Windows.Forms.Label();
             this.paymentListBtn = new System.Windows.Forms.Label();
             this.profileBtn = new System.Windows.Forms.Label();
+            this.closeBtn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +88,7 @@
             this.saveBtn.BackColor = System.Drawing.Color.Transparent;
             this.saveBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.saveBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.saveBtn.Image = global::AIO_Staff.Properties.Resources.middleBtn2;
+            this.saveBtn.Image = global::AIO_Staff.Properties.Resources.middleBtn;
             this.saveBtn.Location = new System.Drawing.Point(419, 196);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(257, 62);
@@ -101,7 +102,7 @@
             this.aioChatBtn.BackColor = System.Drawing.Color.Transparent;
             this.aioChatBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.aioChatBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.aioChatBtn.Image = global::AIO_Staff.Properties.Resources.btn33;
+            this.aioChatBtn.Image = global::AIO_Staff.Properties.Resources.btn3;
             this.aioChatBtn.Location = new System.Drawing.Point(12, 447);
             this.aioChatBtn.Name = "aioChatBtn";
             this.aioChatBtn.Size = new System.Drawing.Size(104, 50);
@@ -115,7 +116,7 @@
             this.paymentListBtn.BackColor = System.Drawing.Color.Transparent;
             this.paymentListBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.paymentListBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.paymentListBtn.Image = global::AIO_Staff.Properties.Resources.btn22;
+            this.paymentListBtn.Image = global::AIO_Staff.Properties.Resources.btn2;
             this.paymentListBtn.Location = new System.Drawing.Point(122, 447);
             this.paymentListBtn.Name = "paymentListBtn";
             this.paymentListBtn.Size = new System.Drawing.Size(154, 50);
@@ -129,7 +130,7 @@
             this.profileBtn.BackColor = System.Drawing.Color.Transparent;
             this.profileBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(162)));
             this.profileBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.profileBtn.Image = global::AIO_Staff.Properties.Resources.btn34;
+            this.profileBtn.Image = global::AIO_Staff.Properties.Resources.btn3;
             this.profileBtn.Location = new System.Drawing.Point(282, 447);
             this.profileBtn.Name = "profileBtn";
             this.profileBtn.Size = new System.Drawing.Size(104, 50);
@@ -138,12 +139,23 @@
             this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.profileBtn.Click += new System.EventHandler(this.profileBtn_Click);
             // 
+            // closeBtn
+            // 
+            this.closeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.closeBtn.Image = global::AIO_Staff.Properties.Resources.closeBtn;
+            this.closeBtn.Location = new System.Drawing.Point(659, 9);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(36, 36);
+            this.closeBtn.TabIndex = 24;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
             // ProfileUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AIO_Staff.Properties.Resources.bg5;
             this.ClientSize = new System.Drawing.Size(706, 506);
+            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.profileBtn);
             this.Controls.Add(this.paymentListBtn);
             this.Controls.Add(this.aioChatBtn);
@@ -172,5 +184,6 @@
         private System.Windows.Forms.Label aioChatBtn;
         private System.Windows.Forms.Label paymentListBtn;
         private System.Windows.Forms.Label profileBtn;
+        private System.Windows.Forms.Label closeBtn;
     }
 }

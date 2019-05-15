@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\AIOWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\FinancialWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -171,6 +176,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\AccountWebService\index.wsdl" />
+    <None Include="Connected Services\AIOWebService\index.wsdl" />
     <None Include="Connected Services\FinancialWebService\AIO_Staff.FinancialWebService.financialList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -262,6 +268,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\AccountWebService\" />
+    <WCFMetadataStorage Include="Connected Services\AIOWebService\" />
     <WCFMetadataStorage Include="Connected Services\FinancialWebService\" />
   </ItemGroup>
   <ItemGroup>
@@ -329,6 +336,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AIOWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AIOWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AIOWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
