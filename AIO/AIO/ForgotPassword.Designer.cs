@@ -54,23 +54,23 @@
             // 
             this.mailLabel.AutoSize = true;
             this.mailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.mailLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.mailLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mailLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.mailLabel.Location = new System.Drawing.Point(414, 141);
+            this.mailLabel.Location = new System.Drawing.Point(413, 132);
             this.mailLabel.Name = "mailLabel";
-            this.mailLabel.Size = new System.Drawing.Size(37, 18);
+            this.mailLabel.Size = new System.Drawing.Size(48, 24);
             this.mailLabel.TabIndex = 31;
             this.mailLabel.Text = "Mail";
             // 
             // signUpBtn
             // 
             this.signUpBtn.BackColor = System.Drawing.Color.Transparent;
-            this.signUpBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.signUpBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.signUpBtn.ForeColor = System.Drawing.Color.Transparent;
             this.signUpBtn.Image = global::AIO.Properties.Resources.btn34;
-            this.signUpBtn.Location = new System.Drawing.Point(146, 406);
+            this.signUpBtn.Location = new System.Drawing.Point(224, 380);
             this.signUpBtn.Name = "signUpBtn";
-            this.signUpBtn.Size = new System.Drawing.Size(116, 50);
+            this.signUpBtn.Size = new System.Drawing.Size(104, 50);
             this.signUpBtn.TabIndex = 36;
             this.signUpBtn.Text = "Sign Up";
             this.signUpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,11 +81,11 @@
             this.sendBtn.BackColor = System.Drawing.Color.Black;
             this.sendBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sendBtn.BackgroundImage")));
             this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.sendBtn.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.sendBtn.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sendBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.sendBtn.Location = new System.Drawing.Point(418, 240);
             this.sendBtn.Name = "sendBtn";
-            this.sendBtn.Size = new System.Drawing.Size(257, 62);
+            this.sendBtn.Size = new System.Drawing.Size(259, 65);
             this.sendBtn.TabIndex = 35;
             this.sendBtn.Text = "Send";
             this.sendBtn.UseVisualStyleBackColor = false;
@@ -104,12 +104,12 @@
             // signInBtn
             // 
             this.signInBtn.BackColor = System.Drawing.Color.Transparent;
-            this.signInBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.signInBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.signInBtn.ForeColor = System.Drawing.Color.Transparent;
             this.signInBtn.Image = global::AIO.Properties.Resources.btn34;
-            this.signInBtn.Location = new System.Drawing.Point(25, 406);
+            this.signInBtn.Location = new System.Drawing.Point(73, 380);
             this.signInBtn.Name = "signInBtn";
-            this.signInBtn.Size = new System.Drawing.Size(116, 50);
+            this.signInBtn.Size = new System.Drawing.Size(104, 50);
             this.signInBtn.TabIndex = 32;
             this.signInBtn.Text = "Sign In";
             this.signInBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,7 +129,11 @@
             // 
             this.middlelogo1.BackColor = System.Drawing.Color.Transparent;
             this.middlelogo1.Image = global::AIO.Properties.Resources.middleLogo2;
+<<<<<<< HEAD
             this.middlelogo1.Location = new System.Drawing.Point(61, 141);
+=======
+            this.middlelogo1.Location = new System.Drawing.Point(138, 142);
+>>>>>>> parent of 0673fe2... Update ForgotPassword.Designer.cs
             this.middlelogo1.Name = "middlelogo1";
             this.middlelogo1.Size = new System.Drawing.Size(175, 203);
             this.middlelogo1.TabIndex = 29;
