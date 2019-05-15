@@ -129,7 +129,7 @@
             // 
             this.middlelogo1.BackColor = System.Drawing.Color.Transparent;
             this.middlelogo1.Image = global::AIO.Properties.Resources.middleLogo2;
-<<<<<<< HEAD
+
 
             this.middlelogo1.Location = new System.Drawing.Point(61, 141);
 
@@ -138,9 +138,9 @@
 
             this.middlelogo1.Location = new System.Drawing.Point(138, 142);
 
-=======
+
             this.middlelogo1.Location = new System.Drawing.Point(61, 141);
->>>>>>> parent of 03aef00... Update ForgotPassword.Designer.cs
+
             this.middlelogo1.Name = "middlelogo1";
             this.middlelogo1.Size = new System.Drawing.Size(175, 203);
             this.middlelogo1.TabIndex = 29;
