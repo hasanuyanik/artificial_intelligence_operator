@@ -13,9 +13,17 @@ namespace AIO_Staff
 {
     public partial class StaffChatPage : Form
     {
+        string nick;
+        string token;
+        string authority;
+        string term = "";
+
         public StaffChatPage()
         {
             InitializeComponent();
+            nick = Staff.Nick;
+            token = Staff.Token;
+            authority = Staff.Authority;
         }
 
         private void StaffChatPage_Load(object sender, EventArgs e)
@@ -71,22 +79,27 @@ namespace AIO_Staff
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            /*Bot AI = new Bot();
-            AI.loadSettings();
-            AI.loadAIMLFromFiles();
-            AI.isAcceptingUserInput = false;
-            User myuser = new User("Username Here", AI);
-            AI.isAcceptingUserInput = true;
-            Request r = new Request(messageTextBox.Text, myuser, AI);
-            Result res = AI.Chat(r);
-            messageScreenListBox.Text = "AIO : " + res.Output;*/
-            messageScreenListBox.Items.Add("ID : " + messageTextBox.Text);
+            AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
+
+            messageScreenListBox.Items.Add(serviceSoap.talk(messageTextBox.Text, token, authority));
+
         }
 
         private void aioSendBtn_Click(object sender, EventArgs e)
         {
-            messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
+            AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
 
+
+            if(messageScreenListBox.Items.Count % 2 == 0)
+            {
+                messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
+            }
+            else
+            {
+                term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString().Replace("AIO : ", ""); ;
+                serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, authority);
+            }
+                                                                     
         }
     }
 }
