@@ -80,6 +80,7 @@ namespace AIO_Staff
         private void sendBtn_Click(object sender, EventArgs e)
         {
             AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
+            messageScreenListBox.Items.Add(nick + " : " + messageTextBox.Text);
 
             messageScreenListBox.Items.Add(serviceSoap.talk(messageTextBox.Text, token, authority));
 
@@ -96,6 +97,7 @@ namespace AIO_Staff
             }
             else
             {
+                messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
                 term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString().Replace("AIO : ", ""); ;
                 serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, authority);
             }
