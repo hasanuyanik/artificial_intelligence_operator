@@ -28,9 +28,9 @@ namespace AIO_Staff
 
         private void AioChatBtn_Click(object sender, EventArgs e)
         {
-           // CustomerChatPage chat = new CustomerChatPage();
-           // chat.Show();
-           // this.Hide();
+           StaffChatPage chat = new StaffChatPage();
+           chat.Show();
+           this.Hide();
         }
 
         private void ProfileUpdateBtn_Click(object sender, EventArgs e)
