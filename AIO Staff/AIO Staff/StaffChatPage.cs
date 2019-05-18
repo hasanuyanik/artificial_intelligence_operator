@@ -82,7 +82,7 @@ namespace AIO_Staff
             AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
             messageScreenListBox.Items.Add(nick + " : " + messageTextBox.Text);
 
-            messageScreenListBox.Items.Add(serviceSoap.talk(messageTextBox.Text, token, authority));
+            messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, authority)));
 
         }
 
@@ -97,8 +97,8 @@ namespace AIO_Staff
             }
             else
             {
+                term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString();
                 messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
-                term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString().Replace("AIO : ", ""); ;
                 serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, authority);
             }
                                                                      
