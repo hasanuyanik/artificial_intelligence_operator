@@ -17,7 +17,7 @@ namespace AIO_Staff
         string token;
         string authority;
         string term = "";
-
+        AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
         public StaffChatPage()
         {
             InitializeComponent();
@@ -80,28 +80,28 @@ namespace AIO_Staff
         private void sendBtn_Click(object sender, EventArgs e)
         {
             AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
+
             messageScreenListBox.Items.Add(nick + " : " + messageTextBox.Text);
 
-            messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, authority)));
+            messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority)));
 
         }
 
         private void aioSendBtn_Click(object sender, EventArgs e)
         {
-            AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
-
-
+            
             if(messageScreenListBox.Items.Count % 2 == 0)
             {
                 messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
             }
             else
             {
-                term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString();
+                term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString().Replace("AIO : ","");
+                serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, AppAuthority.Authority);
                 messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
-                serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, authority);
+
             }
-                                                                     
+
         }
     }
 }
