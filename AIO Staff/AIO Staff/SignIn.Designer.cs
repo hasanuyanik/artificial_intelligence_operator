@@ -95,7 +95,7 @@
             this.passwordTextBox.PasswordChar = '●';
             this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
             this.passwordTextBox.TabIndex = 29;
-            this.passwordTextBox.Text = "......";
+            this.passwordTextBox.Text = "abc123";
             // 
             // nickTextBox
             // 
@@ -106,6 +106,7 @@
             this.nickTextBox.Name = "nickTextBox";
             this.nickTextBox.Size = new System.Drawing.Size(251, 30);
             this.nickTextBox.TabIndex = 28;
+            this.nickTextBox.Text = "Hasan";
             // 
             // passwordLabel
             // 
@@ -144,6 +145,7 @@
             // passwordPictureBox
             // 
             this.passwordPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.passwordPictureBox.Image = global::AIO_Staff.Properties.Resources.textbox;
             this.passwordPictureBox.Location = new System.Drawing.Point(376, 210);
             this.passwordPictureBox.Name = "passwordPictureBox";
             this.passwordPictureBox.Size = new System.Drawing.Size(263, 44);
@@ -153,6 +155,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::AIO_Staff.Properties.Resources.textbox;
             this.pictureBox2.Location = new System.Drawing.Point(376, 125);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(263, 44);
