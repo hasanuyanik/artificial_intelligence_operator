@@ -51,10 +51,12 @@ namespace AIO
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
+            AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
+
             if (siyah)
             {
-                messageScreenListBox.Items.Add("" + customerName + ": " + messageTextBox.Text);
-                messageScreenListBox.Items.Add("AIO: " + aioAnswer("s"));
+                messageScreenListBox.Items.Add("" + customerName + " : " + messageTextBox.Text);
+                messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, authority)));
             }
 
         }
