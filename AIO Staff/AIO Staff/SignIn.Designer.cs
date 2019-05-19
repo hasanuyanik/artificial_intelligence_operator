@@ -95,7 +95,7 @@
             this.passwordTextBox.PasswordChar = '●';
             this.passwordTextBox.Size = new System.Drawing.Size(251, 30);
             this.passwordTextBox.TabIndex = 29;
-            this.passwordTextBox.Text = "abc123";
+            this.passwordTextBox.Text = "......";
             // 
             // nickTextBox
             // 
@@ -106,7 +106,6 @@
             this.nickTextBox.Name = "nickTextBox";
             this.nickTextBox.Size = new System.Drawing.Size(251, 30);
             this.nickTextBox.TabIndex = 28;
-            this.nickTextBox.Text = "Hasan";
             // 
             // passwordLabel
             // 
