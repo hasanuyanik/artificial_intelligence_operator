@@ -90,18 +90,28 @@ namespace AIO_Staff
 
         private void aioSendBtn_Click(object sender, EventArgs e)
         {
-            
-            if(messageScreenListBox.Items.Count % 2 == 0)
-            {
-                messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
-            }
-            else
-            {
-                term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString().Replace("AIO : ","");
-                serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, AppAuthority.Authority);
-                messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
+            if(messageScreenListBox.Items.Count > 0) { 
 
+            for (int i = 0; i < messageScreenListBox.Items.Count - 1; i++) {
+                string row = messageScreenListBox.Items[i].ToString();
+                var rowSplit = row.Split(':');
+                if (rowSplit[0] == Staff.Nick + " ") {
+                    var colSplit = rowSplit[1].Split(' ');
+                    term = colSplit[1];
+                }
             }
+
+                //term = messageScreenListBox.Items[messageScreenListBox.Items.Count - 1].ToString().Replace("AIO : ","");
+                string teachStatu = serviceSoap.teach(term, aioMessageTextBox.Text, nick, token, AppAuthority.Authority);
+                messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
+                if (teachStatu == "1")
+                {
+                    messageScreenListBox.Items.Add("System : Teach Success!");
+                }
+                else {
+                    messageScreenListBox.Items.Add("System : Teach Failed!");
+                }
+                }
 
         }
     }
