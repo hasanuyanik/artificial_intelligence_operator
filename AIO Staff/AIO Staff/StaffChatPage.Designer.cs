@@ -69,11 +69,11 @@
             // 
             this.aioMessageTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.aioMessageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.aioMessageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aioMessageTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.aioMessageTextBox.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aioMessageTextBox.ForeColor = System.Drawing.Color.Silver;
             this.aioMessageTextBox.Location = new System.Drawing.Point(164, 79);
             this.aioMessageTextBox.Name = "aioMessageTextBox";
-            this.aioMessageTextBox.Size = new System.Drawing.Size(346, 31);
+            this.aioMessageTextBox.Size = new System.Drawing.Size(346, 32);
             this.aioMessageTextBox.TabIndex = 2;
             this.aioMessageTextBox.Text = "Example Message";
             this.aioMessageTextBox.MouseEnter += new System.EventHandler(this.aioMessageTextBox_MouseEnter);
@@ -108,11 +108,11 @@
             // 
             this.messageTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.messageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.messageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageTextBox.ForeColor = System.Drawing.Color.Gray;
+            this.messageTextBox.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messageTextBox.ForeColor = System.Drawing.Color.Silver;
             this.messageTextBox.Location = new System.Drawing.Point(165, 450);
             this.messageTextBox.Name = "messageTextBox";
-            this.messageTextBox.Size = new System.Drawing.Size(346, 31);
+            this.messageTextBox.Size = new System.Drawing.Size(346, 32);
             this.messageTextBox.TabIndex = 5;
             this.messageTextBox.Text = "Message";
             this.messageTextBox.MouseEnter += new System.EventHandler(this.messageTextBox_MouseEnter);
