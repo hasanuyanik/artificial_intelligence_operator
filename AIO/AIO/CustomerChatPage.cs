@@ -31,7 +31,7 @@ namespace AIO
         {
             FinancialWebService.financialPortTypeClient serviceSoap = new FinancialWebService.financialPortTypeClient();
             timer1.Stop();
-            serviceSoap.createInvoice(token, authority, time.ToString()); 
+            serviceSoap.createInvoice(token, AppAuthority.Authority, time.ToString()); 
             th = new Thread(x);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
@@ -55,7 +55,7 @@ namespace AIO
             if (siyah)
             {
                 messageScreenListBox.Items.Add("" + customerName + " : " + messageTextBox.Text);
-                messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, authority)));
+                messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority)));
             }
 
         }
