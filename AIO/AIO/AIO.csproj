@@ -335,5 +335,8 @@
   <ItemGroup>
     <None Include="Resources\messageScreen1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messageTextBox.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

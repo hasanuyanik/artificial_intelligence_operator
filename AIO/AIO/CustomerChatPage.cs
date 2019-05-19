@@ -14,17 +14,24 @@ namespace AIO
     public partial class CustomerChatPage : Form
     {
         int time;
-        string customerName = "Berkay";
+        string customerName = Customer.Nick;
         bool siyah;
         Thread th;
+        string token;
+        string authority;
+
         public CustomerChatPage()
         {
             InitializeComponent();
+            authority = AppAuthority.Authority;
+            token = Customer.Token;
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
         {
+            FinancialWebService.financialPortTypeClient serviceSoap = new FinancialWebService.financialPortTypeClient();
             timer1.Stop();
+            serviceSoap.createInvoice(token, authority, time.ToString()); 
             th = new Thread(x);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
