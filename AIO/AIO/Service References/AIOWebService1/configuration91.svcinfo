@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="gG9mc703gGIBMQ1Q7MMUcfV+2Q4=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="j9CAKS8397gcxr/ADzQKBaWh0zo=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="aioBinding2">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="aioPort2" contract="AIOWebService.aioPortType" bindingType="basicHttpBinding" address="http://aio.gencutopia.com/ws/rpc/aio/aio.php" bindingConfiguration="aioBinding2">
+    <endpoint name="aioPort2" contract="AIOWebService1.aioPortType" bindingType="basicHttpBinding" address="http://aio.gencutopia.com/ws/rpc/aio/aio.php" bindingConfiguration="aioBinding2">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://aio.gencutopia.com/ws/rpc/aio/aio.php</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>aioBinding2</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AIOWebService.aioPortType</serializedValue>
+          <serializedValue>AIOWebService1.aioPortType</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

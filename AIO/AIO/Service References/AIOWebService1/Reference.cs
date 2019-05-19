@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AIO.AIOWebService {
+namespace AIO.AIOWebService1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="urn:aio", ConfigurationName="AIOWebService.aioPortType")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="urn:aio", ConfigurationName="AIOWebService1.aioPortType")]
     public interface aioPortType {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:aio#teach", ReplyAction="*")]
@@ -35,12 +35,12 @@ namespace AIO.AIOWebService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface aioPortTypeChannel : AIO.AIOWebService.aioPortType, System.ServiceModel.IClientChannel {
+    public interface aioPortTypeChannel : AIO.AIOWebService1.aioPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class aioPortTypeClient : System.ServiceModel.ClientBase<AIO.AIOWebService.aioPortType>, AIO.AIOWebService.aioPortType {
+    public partial class aioPortTypeClient : System.ServiceModel.ClientBase<AIO.AIOWebService1.aioPortType>, AIO.AIOWebService1.aioPortType {
         
         public aioPortTypeClient() {
         }

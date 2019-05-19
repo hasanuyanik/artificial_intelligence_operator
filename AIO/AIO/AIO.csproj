@@ -94,7 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\AIOWebService\Reference.cs">
+    <Compile Include="Service References\AIOWebService1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -181,7 +181,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AccountWebService\index.wsdl" />
-    <None Include="Service References\AIOWebService\index.wsdl" />
+    <None Include="Service References\AIOWebService1\index.wsdl" />
     <None Include="Service References\FinancialWebService\AIO.FinancialWebService.financialList.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -288,7 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\AccountWebService\" />
-    <WCFMetadataStorage Include="Service References\AIOWebService\" />
+    <WCFMetadataStorage Include="Service References\AIOWebService1\" />
     <WCFMetadataStorage Include="Service References\FinancialWebService\" />
   </ItemGroup>
   <ItemGroup>
@@ -346,13 +346,13 @@
     <None Include="Resources\messageTextBox.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AIOWebService\configuration91.svcinfo" />
+    <None Include="Service References\AIOWebService1\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AIOWebService\configuration.svcinfo" />
+    <None Include="Service References\AIOWebService1\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AIOWebService\Reference.svcmap">
+    <None Include="Service References\AIOWebService1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

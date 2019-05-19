@@ -36,7 +36,6 @@ namespace AIO
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
             this.Close();
-
         }
         private void x()
         {
@@ -51,8 +50,8 @@ namespace AIO
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
-
+            AIOWebService1.aioPortTypeClient serviceSoap = new AIOWebService1.aioPortTypeClient();
+            
             if (siyah)
             {
                 messageScreenListBox.Items.Add("" + customerName + " : " + messageTextBox.Text);
