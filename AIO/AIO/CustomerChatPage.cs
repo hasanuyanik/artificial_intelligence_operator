@@ -19,6 +19,7 @@ namespace AIO
         Thread th;
         string token;
         string authority;
+        FinancialWebService.financialPortTypeClient serviceSoap = new FinancialWebService.financialPortTypeClient();
 
         public CustomerChatPage()
         {
@@ -29,9 +30,8 @@ namespace AIO
 
         private void closeBtn_Click(object sender, EventArgs e)
         {
-            FinancialWebService.financialPortTypeClient serviceSoap = new FinancialWebService.financialPortTypeClient();
             timer1.Stop();
-            serviceSoap.createInvoice(token, AppAuthority.Authority, time.ToString()); 
+            serviceSoap.createInvoice(Customer.Token, AppAuthority.Authority, time.ToString()); 
             th = new Thread(x);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
