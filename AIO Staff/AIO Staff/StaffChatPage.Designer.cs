@@ -38,6 +38,8 @@
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.sendBtn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,11 +69,11 @@
             // 
             this.aioMessageTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.aioMessageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.aioMessageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aioMessageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aioMessageTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.aioMessageTextBox.Location = new System.Drawing.Point(154, 71);
+            this.aioMessageTextBox.Location = new System.Drawing.Point(164, 79);
             this.aioMessageTextBox.Name = "aioMessageTextBox";
-            this.aioMessageTextBox.Size = new System.Drawing.Size(373, 46);
+            this.aioMessageTextBox.Size = new System.Drawing.Size(346, 31);
             this.aioMessageTextBox.TabIndex = 2;
             this.aioMessageTextBox.Text = "Example Message";
             this.aioMessageTextBox.MouseEnter += new System.EventHandler(this.aioMessageTextBox_MouseEnter);
@@ -83,7 +85,7 @@
             this.aioSendBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aioSendBtn.ForeColor = System.Drawing.Color.White;
             this.aioSendBtn.Image = global::AIO_Staff.Properties.Resources.btn21;
-            this.aioSendBtn.Location = new System.Drawing.Point(533, 67);
+            this.aioSendBtn.Location = new System.Drawing.Point(533, 68);
             this.aioSendBtn.Name = "aioSendBtn";
             this.aioSendBtn.Size = new System.Drawing.Size(154, 50);
             this.aioSendBtn.TabIndex = 3;
@@ -106,11 +108,11 @@
             // 
             this.messageTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.messageTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.messageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messageTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.messageTextBox.ForeColor = System.Drawing.Color.Gray;
-            this.messageTextBox.Location = new System.Drawing.Point(154, 440);
+            this.messageTextBox.Location = new System.Drawing.Point(165, 450);
             this.messageTextBox.Name = "messageTextBox";
-            this.messageTextBox.Size = new System.Drawing.Size(373, 46);
+            this.messageTextBox.Size = new System.Drawing.Size(346, 31);
             this.messageTextBox.TabIndex = 5;
             this.messageTextBox.Text = "Message";
             this.messageTextBox.MouseEnter += new System.EventHandler(this.messageTextBox_MouseEnter);
@@ -122,7 +124,7 @@
             this.sendBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sendBtn.ForeColor = System.Drawing.Color.White;
             this.sendBtn.Image = global::AIO_Staff.Properties.Resources.btn21;
-            this.sendBtn.Location = new System.Drawing.Point(533, 440);
+            this.sendBtn.Location = new System.Drawing.Point(533, 439);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(154, 50);
             this.sendBtn.TabIndex = 6;
@@ -141,6 +143,24 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Image = global::AIO_Staff.Properties.Resources.messageTextBox;
+            this.label1.Location = new System.Drawing.Point(158, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(369, 46);
+            this.label1.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Image = global::AIO_Staff.Properties.Resources.messageTextBox;
+            this.label2.Location = new System.Drawing.Point(158, 442);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(369, 46);
+            this.label2.TabIndex = 8;
+            // 
             // StaffChatPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +175,8 @@
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StaffChatPage";
             this.Text = "StaffChatPage";
@@ -177,5 +199,7 @@
         private System.Windows.Forms.TextBox messageTextBox;
         private System.Windows.Forms.Label sendBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

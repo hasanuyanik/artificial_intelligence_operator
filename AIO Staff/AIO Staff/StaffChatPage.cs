@@ -32,10 +32,11 @@ namespace AIO_Staff
 
         private void closeBtn_Click(object sender, EventArgs e)
         {
+            UserProfile userprofile = new UserProfile();
+            userprofile.Show();
             this.Close();
-            //USER PROFILE ACILACAK;
-
         }
+
         bool siyah;
         private void aioMessageTextBox_MouseEnter(object sender, EventArgs e)
         {
