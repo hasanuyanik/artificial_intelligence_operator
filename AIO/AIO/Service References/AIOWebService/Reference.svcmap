@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ff1f0078-a009-494a-bca9-124787ae5446" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5565b8f6-fe85-40dd-8956-df965e54f95e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,7 +22,7 @@
     <MetadataSource Address="http://aio.gencutopia.com/ws/aio/index.php?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="index.wsdl" MetadataType="Wsdl" ID="3724a86b-5bd6-4fdf-a981-01a95ce80cca" SourceId="1" SourceUrl="http://aio.gencutopia.com/ws/aio/index.php?wsdl" />
+    <MetadataFile FileName="index.wsdl" MetadataType="Wsdl" ID="2dd6030d-f27a-4c30-aa35-209bd2484bec" SourceId="1" SourceUrl="http://aio.gencutopia.com/ws/aio/index.php?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
