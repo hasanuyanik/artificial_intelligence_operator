@@ -88,6 +88,8 @@ namespace AIO_Staff
             else
                 messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority)));
 
+            messageScreenListBox.SelectedIndex = messageScreenListBox.Items.Count - 1;
+
         }
 
         private void aioSendBtn_Click(object sender, EventArgs e)
@@ -114,6 +116,8 @@ namespace AIO_Staff
                     messageScreenListBox.Items.Add("System : Teaching is Failed!");
                 }
                 }
+            messageScreenListBox.SelectedIndex = messageScreenListBox.Items.Count - 1;
+
 
         }
     }
