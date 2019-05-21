@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.signInBtn = new System.Windows.Forms.Label();
             this.signUpBtn = new System.Windows.Forms.Label();
             this.forgotPasswordLabel = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             this.signUpBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.signUpBtn.ForeColor = System.Drawing.Color.Transparent;
             this.signUpBtn.Image = global::AIO.Properties.Resources.btn32;
-            this.signUpBtn.Location = new System.Drawing.Point(17, 414);
+            this.signUpBtn.Location = new System.Drawing.Point(12, 438);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(104, 50);
             this.signUpBtn.TabIndex = 20;
@@ -191,6 +192,7 @@
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignIn";
             this.Text = "SignIn";
             ((System.ComponentModel.ISupportInitialize)(this.passwordPictureBox)).EndInit();

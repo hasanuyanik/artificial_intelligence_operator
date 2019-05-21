@@ -55,7 +55,9 @@ namespace AIO
             if (siyah)
             {
                 messageScreenListBox.Items.Add("" + customerName + " : " + messageTextBox.Text);
-                messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority)));
+                string answer = serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority);
+                if (answer == "0") { answer = "Bu konuda bilgim yok."; }
+                messageScreenListBox.Items.Add("AIO : " + answer);
             }
 
         }

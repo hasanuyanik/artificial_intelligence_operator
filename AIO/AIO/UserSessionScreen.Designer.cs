@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSessionScreen));
             this.nickLabel = new System.Windows.Forms.Label();
             this.logoutBtn = new System.Windows.Forms.Label();
             this.moneyLabel = new System.Windows.Forms.Label();
@@ -90,6 +91,7 @@
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.nickLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(800, 600);
             this.Name = "UserSessionScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
