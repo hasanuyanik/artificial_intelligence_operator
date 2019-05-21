@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace AIO_Staff
 {
     public partial class UserProfile : Form
     {
+        Thread th;
+
         public UserProfile()
         {
             InitializeComponent();
@@ -20,11 +23,7 @@ namespace AIO_Staff
 
         }
 
-        private void CloseBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Application.Exit();
-        }
+        
 
         private void AioChatBtn_Click(object sender, EventArgs e)
         {
@@ -64,7 +63,7 @@ namespace AIO_Staff
 
             if (HesapSilme == "0")
             {
-                MessageBox.Show("delete filed!");
+                MessageBox.Show("Delete Failed!");
 
 
 
@@ -72,15 +71,26 @@ namespace AIO_Staff
 
             else if (HesapSilme == "1")
             {
-                MessageBox.Show("delete succes!");
+                MessageBox.Show("Delete Successfull!");
 
-                Index iindex = new Index();
-                iindex.Show();
-                this.Hide();
+                th = new Thread(openingIndex);
+                th.SetApartmentState(ApartmentState.STA);
+                th.Start();
+                Application.Exit();
+
 
 
 
             }
         }
+
+        private void openingIndex()
+        {
+            Application.Run(new Index());
+        }
+
+
+
+
     }
 }

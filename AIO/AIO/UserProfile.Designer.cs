@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserProfile));
             this.moneylabel = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.closeBtn = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.nickLabel = new System.Windows.Forms.Label();
             this.aioChatBtn = new System.Windows.Forms.Label();
@@ -66,16 +65,6 @@
             this.logo.Size = new System.Drawing.Size(175, 203);
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.closeBtn.Image = ((System.Drawing.Image)(resources.GetObject("closeBtn.Image")));
-            this.closeBtn.Location = new System.Drawing.Point(658, 9);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(36, 36);
-            this.closeBtn.TabIndex = 1;
-            this.closeBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // pictureBox1
             // 
@@ -169,7 +158,6 @@
             this.Controls.Add(this.moneylabel);
             this.Controls.Add(this.nickLabel);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserProfile";
@@ -185,7 +173,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.Label closeBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label nickLabel;
         private System.Windows.Forms.Label aioChatBtn;
