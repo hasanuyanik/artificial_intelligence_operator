@@ -83,8 +83,10 @@ namespace AIO_Staff
             AIOWebService.aioPortTypeClient serviceSoap = new AIOWebService.aioPortTypeClient();
 
             messageScreenListBox.Items.Add(nick + " : " + messageTextBox.Text);
-
-            messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority)));
+            if (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority) == "0")
+                messageScreenListBox.Items.Add("AIO : Bu konuda bilgim yok.");
+            else
+                messageScreenListBox.Items.Add("AIO : " + (serviceSoap.talk(messageTextBox.Text, token, AppAuthority.Authority)));
 
         }
 
@@ -106,10 +108,10 @@ namespace AIO_Staff
                 messageScreenListBox.Items.Add("AIO : " + aioMessageTextBox.Text);
                 if (teachStatu == "1")
                 {
-                    messageScreenListBox.Items.Add("System : Teach Success!");
+                    messageScreenListBox.Items.Add("System : Teaching is Successful!");
                 }
                 else {
-                    messageScreenListBox.Items.Add("System : Teach Failed!");
+                    messageScreenListBox.Items.Add("System : Teaching is Failed!");
                 }
                 }
 
