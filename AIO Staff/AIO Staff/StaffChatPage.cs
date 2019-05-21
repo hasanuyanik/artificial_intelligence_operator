@@ -99,7 +99,7 @@ namespace AIO_Staff
                 var rowSplit = row.Split(':');
                 if (rowSplit[0] == Staff.Nick + " ") {
                     var colSplit = rowSplit[1].Split(' ');
-                    term = colSplit[1];
+                        term = row.Replace(Staff.Nick+" : ","");
                 }
             }
 
