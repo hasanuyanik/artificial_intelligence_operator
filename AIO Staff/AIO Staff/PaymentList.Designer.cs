@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(paymentlist));
             this.Logo = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.Label();
             this.selectInvoiceLabel = new System.Windows.Forms.Label();
@@ -167,6 +168,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Transparent;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "paymentlist";
             this.Load += new System.EventHandler(this.paymentListBtn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();

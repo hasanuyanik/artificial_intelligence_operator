@@ -169,6 +169,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PaymentPage";
             this.Text = "PaymentPage";
             this.Load += new System.EventHandler(this.PaymentPage_Load);

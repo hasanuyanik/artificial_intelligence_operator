@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffChatPage));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.logo = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.Label();
@@ -178,6 +179,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StaffChatPage";
             this.Text = "StaffChatPage";
             this.Load += new System.EventHandler(this.StaffChatPage_Load);

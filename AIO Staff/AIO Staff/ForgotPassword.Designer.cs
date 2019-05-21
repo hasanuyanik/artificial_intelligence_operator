@@ -47,7 +47,7 @@
             this.signUpBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.signUpBtn.ForeColor = System.Drawing.Color.Transparent;
             this.signUpBtn.Image = global::AIO_Staff.Properties.Resources.btn31;
-            this.signUpBtn.Location = new System.Drawing.Point(247, 380);
+            this.signUpBtn.Location = new System.Drawing.Point(170, 438);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(104, 50);
             this.signUpBtn.TabIndex = 44;
@@ -62,7 +62,7 @@
             this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sendBtn.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sendBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.sendBtn.Location = new System.Drawing.Point(440, 244);
+            this.sendBtn.Location = new System.Drawing.Point(360, 241);
             this.sendBtn.Name = "sendBtn";
             this.sendBtn.Size = new System.Drawing.Size(259, 65);
             this.sendBtn.TabIndex = 43;
@@ -73,7 +73,7 @@
             // mailTextBox
             // 
             this.mailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.mailTextBox.Location = new System.Drawing.Point(453, 180);
+            this.mailTextBox.Location = new System.Drawing.Point(373, 177);
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
             this.mailTextBox.Size = new System.Drawing.Size(235, 22);
@@ -83,7 +83,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::AIO_Staff.Properties.Resources.textbox4;
-            this.pictureBox2.Location = new System.Drawing.Point(440, 168);
+            this.pictureBox2.Location = new System.Drawing.Point(360, 165);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(264, 45);
             this.pictureBox2.TabIndex = 41;
@@ -95,7 +95,7 @@
             this.signInBtn.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.signInBtn.ForeColor = System.Drawing.Color.Transparent;
             this.signInBtn.Image = global::AIO_Staff.Properties.Resources.btn31;
-            this.signInBtn.Location = new System.Drawing.Point(96, 380);
+            this.signInBtn.Location = new System.Drawing.Point(19, 438);
             this.signInBtn.Name = "signInBtn";
             this.signInBtn.Size = new System.Drawing.Size(104, 50);
             this.signInBtn.TabIndex = 40;
@@ -109,7 +109,7 @@
             this.mailLabel.BackColor = System.Drawing.Color.Transparent;
             this.mailLabel.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.mailLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.mailLabel.Location = new System.Drawing.Point(436, 132);
+            this.mailLabel.Location = new System.Drawing.Point(356, 129);
             this.mailLabel.Name = "mailLabel";
             this.mailLabel.Size = new System.Drawing.Size(48, 24);
             this.mailLabel.TabIndex = 39;
@@ -119,7 +119,7 @@
             // 
             this.closeBtn.BackColor = System.Drawing.Color.Transparent;
             this.closeBtn.Image = global::AIO_Staff.Properties.Resources.closeBtn;
-            this.closeBtn.Location = new System.Drawing.Point(652, 20);
+            this.closeBtn.Location = new System.Drawing.Point(658, 9);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(36, 36);
             this.closeBtn.TabIndex = 38;
@@ -129,7 +129,7 @@
             // 
             this.middlelogo1.BackColor = System.Drawing.Color.Transparent;
             this.middlelogo1.Image = global::AIO_Staff.Properties.Resources.logo;
-            this.middlelogo1.Location = new System.Drawing.Point(161, 142);
+            this.middlelogo1.Location = new System.Drawing.Point(80, 132);
             this.middlelogo1.Name = "middlelogo1";
             this.middlelogo1.Size = new System.Drawing.Size(175, 203);
             this.middlelogo1.TabIndex = 37;
@@ -150,6 +150,7 @@
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.middlelogo1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ForgotPassword";
             this.Text = "ForgotPassword";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

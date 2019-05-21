@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.closeBtn = new System.Windows.Forms.Label();
             this.signInBtn = new System.Windows.Forms.Label();
             this.signUpBtn = new System.Windows.Forms.Label();
@@ -96,6 +97,7 @@
             this.Controls.Add(this.signInBtn);
             this.Controls.Add(this.closeBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Index";
             this.Text = "Index";
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();

@@ -69,6 +69,7 @@
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.nickLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserSessionScreen";
             this.Text = "UserSessionScreen";
             this.Load += new System.EventHandler(this.UserSessionScreen_Load);

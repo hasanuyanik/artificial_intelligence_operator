@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.middlelogo1 = new System.Windows.Forms.PictureBox();
             this.closeBtn = new System.Windows.Forms.Label();
             this.nickLabel = new System.Windows.Forms.Label();
@@ -95,11 +96,7 @@
             // 
             this.nickTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nickTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-
-            this.nickTextBox.Location = new System.Drawing.Point(414, 129);
-
             this.nickTextBox.Location = new System.Drawing.Point(412, 126);
-
             this.nickTextBox.Multiline = true;
             this.nickTextBox.Name = "nickTextBox";
             this.nickTextBox.Size = new System.Drawing.Size(251, 30);
@@ -131,11 +128,7 @@
             // 
             this.mailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-
-            this.mailTextBox.Location = new System.Drawing.Point(414, 216);
-
             this.mailTextBox.Location = new System.Drawing.Point(415, 215);
-
             this.mailTextBox.Multiline = true;
             this.mailTextBox.Name = "mailTextBox";
             this.mailTextBox.Size = new System.Drawing.Size(251, 30);
@@ -167,11 +160,7 @@
             // 
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-
-            this.passwordTextBox.Location = new System.Drawing.Point(414, 289);
-
             this.passwordTextBox.Location = new System.Drawing.Point(413, 289);
-
             this.passwordTextBox.Multiline = true;
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '●';
@@ -226,6 +215,7 @@
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.middlelogo1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUp";
             this.Text = "SignUp";
             ((System.ComponentModel.ISupportInitialize)(this.middlelogo1)).EndInit();
