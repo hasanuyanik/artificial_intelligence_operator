@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace AIO
 {
     static class Program
@@ -14,9 +15,10 @@ namespace AIO
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Index());
+            Application.Run(new Intro());
         }
     }
 }

@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -96,6 +96,12 @@
     </Compile>
     <Compile Include="ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
     </Compile>
     <Compile Include="PaymentList.cs">
       <SubType>Form</SubType>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentList.resx">
       <DependentUpon>PaymentList.cs</DependentUpon>
@@ -394,6 +403,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AIO_Favicon.ico" />
+    <None Include="Resources\aioIntroBg.jpg" />
+    <None Include="Resources\aioIntroBg.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
